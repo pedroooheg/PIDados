@@ -1,6 +1,6 @@
 {
     "result": {
-        "resumo": "Encontradas 56 unidades com 1 ou mais medicamentos da lista",
+        "resumo": "Encontradas 60 unidades com 1 ou mais medicamentos da lista",
         "legendas": [
             {
                 "cor": "#008000",
@@ -29,10 +29,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "3.620",
-                        "cor": "#FF0000",
+                        "quantidade": "6.570",
+                        "cor": "#FFA500",
                         "mensagens": [],
-                        "nivelDisponibilidade": "baixo"
+                        "nivelDisponibilidade": "médio"
                     }
                 ]
             },
@@ -49,7 +49,27 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "20.840",
+                        "quantidade": "12.489",
+                        "cor": "#FFA500",
+                        "mensagens": [],
+                        "nivelDisponibilidade": "médio"
+                    }
+                ]
+            },
+            {
+                "distance": 1935,
+                "cor": "#166D78",
+                "unidade": "UBS VELEIROS",
+                "endereco": "AVENIDA CLARA MANTELLI , 185 - JARDIM DOS LAGOS",
+                "expediente": "De Segunda a Sexta: 07:00 até 19:00. ",
+                "coordenadas": {
+                    "lat": -23.6830534,
+                    "lng": -46.7114796
+                },
+                "quantidades": [
+                    {
+                        "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
+                        "quantidade": "19.430",
                         "cor": "#FFA500",
                         "mensagens": [],
                         "nivelDisponibilidade": "médio"
@@ -69,10 +89,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "10.840",
-                        "cor": "#FFA500",
+                        "quantidade": "3.460",
+                        "cor": "#FF0000",
                         "mensagens": [],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -89,7 +109,7 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "16.220",
+                        "quantidade": "14.140",
                         "cor": "#FFA500",
                         "mensagens": [],
                         "nivelDisponibilidade": "médio"
@@ -109,10 +129,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "14.810",
-                        "cor": "#FFA500",
+                        "quantidade": "7.100",
+                        "cor": "#FF0000",
                         "mensagens": [],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -129,7 +149,7 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "6.330",
+                        "quantidade": "8.770",
                         "cor": "#FFA500",
                         "mensagens": [],
                         "nivelDisponibilidade": "médio"
@@ -149,10 +169,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "20.940",
-                        "cor": "#FFA500",
+                        "quantidade": "50",
+                        "cor": "#FF0000",
                         "mensagens": [],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -169,10 +189,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "20.930",
-                        "cor": "#FFA500",
+                        "quantidade": "9.030",
+                        "cor": "#FF0000",
                         "mensagens": [],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -189,10 +209,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "12.880",
-                        "cor": "#008000",
+                        "quantidade": "8.060",
+                        "cor": "#FFA500",
                         "mensagens": [],
-                        "nivelDisponibilidade": "alto"
+                        "nivelDisponibilidade": "médio"
                     }
                 ]
             },
@@ -209,7 +229,7 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "38.790",
+                        "quantidade": "34.898",
                         "cor": "#FFA500",
                         "mensagens": [],
                         "nivelDisponibilidade": "médio"
@@ -229,10 +249,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "3.040",
-                        "cor": "#FF0000",
+                        "quantidade": "8.020",
+                        "cor": "#FFA500",
                         "mensagens": [],
-                        "nivelDisponibilidade": "baixo"
+                        "nivelDisponibilidade": "médio"
                     }
                 ]
             },
@@ -249,10 +269,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "4.510",
-                        "cor": "#FFA500",
+                        "quantidade": "90",
+                        "cor": "#FF0000",
                         "mensagens": [],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -269,10 +289,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "9.910",
-                        "cor": "#FFA500",
+                        "quantidade": "3.309",
+                        "cor": "#FF0000",
                         "mensagens": [],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -289,10 +309,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "10.710",
-                        "cor": "#FFA500",
+                        "quantidade": "4.700",
+                        "cor": "#FF0000",
                         "mensagens": [],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -309,7 +329,7 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "18.430",
+                        "quantidade": "10.134",
                         "cor": "#FFA500",
                         "mensagens": [],
                         "nivelDisponibilidade": "médio"
@@ -329,7 +349,7 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "15.269",
+                        "quantidade": "20.039",
                         "cor": "#FFA500",
                         "mensagens": [],
                         "nivelDisponibilidade": "médio"
@@ -349,10 +369,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "4.220",
-                        "cor": "#FF0000",
+                        "quantidade": "9.410",
+                        "cor": "#FFA500",
                         "mensagens": [],
-                        "nivelDisponibilidade": "baixo"
+                        "nivelDisponibilidade": "médio"
                     }
                 ]
             },
@@ -369,10 +389,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "14.290",
-                        "cor": "#FF0000",
+                        "quantidade": "24.810",
+                        "cor": "#FFA500",
                         "mensagens": [],
-                        "nivelDisponibilidade": "baixo"
+                        "nivelDisponibilidade": "médio"
                     }
                 ]
             },
@@ -389,10 +409,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "5.520",
-                        "cor": "#FF0000",
+                        "quantidade": "20.570",
+                        "cor": "#FFA500",
                         "mensagens": [],
-                        "nivelDisponibilidade": "baixo"
+                        "nivelDisponibilidade": "médio"
                     }
                 ]
             },
@@ -409,10 +429,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "30.050",
-                        "cor": "#008000",
+                        "quantidade": "16.828",
+                        "cor": "#FFA500",
                         "mensagens": [],
-                        "nivelDisponibilidade": "alto"
+                        "nivelDisponibilidade": "médio"
                     }
                 ]
             },
@@ -429,10 +449,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "16.439",
-                        "cor": "#FFA500",
+                        "quantidade": "4.707",
+                        "cor": "#FF0000",
                         "mensagens": [],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -449,10 +469,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "22.909",
-                        "cor": "#FFA500",
+                        "quantidade": "32.330",
+                        "cor": "#008000",
                         "mensagens": [],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "alto"
                     }
                 ]
             },
@@ -469,10 +489,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "33.318",
-                        "cor": "#008000",
+                        "quantidade": "24.897",
+                        "cor": "#FFA500",
                         "mensagens": [],
-                        "nivelDisponibilidade": "alto"
+                        "nivelDisponibilidade": "médio"
                     }
                 ]
             },
@@ -489,7 +509,7 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "30.790",
+                        "quantidade": "46.100",
                         "cor": "#FFA500",
                         "mensagens": [],
                         "nivelDisponibilidade": "médio"
@@ -509,7 +529,7 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "11.437",
+                        "quantidade": "12.927",
                         "cor": "#FFA500",
                         "mensagens": [],
                         "nivelDisponibilidade": "médio"
@@ -529,10 +549,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "1.980",
-                        "cor": "#FF0000",
+                        "quantidade": "12.490",
+                        "cor": "#FFA500",
                         "mensagens": [],
-                        "nivelDisponibilidade": "baixo"
+                        "nivelDisponibilidade": "médio"
                     }
                 ]
             },
@@ -549,10 +569,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "10.980",
-                        "cor": "#008000",
+                        "quantidade": "6.600",
+                        "cor": "#FFA500",
                         "mensagens": [],
-                        "nivelDisponibilidade": "alto"
+                        "nivelDisponibilidade": "médio"
                     }
                 ]
             },
@@ -569,7 +589,7 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "23.660",
+                        "quantidade": "15.350",
                         "cor": "#FFA500",
                         "mensagens": [],
                         "nivelDisponibilidade": "médio"
@@ -589,10 +609,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "15.410",
-                        "cor": "#008000",
+                        "quantidade": "11.500",
+                        "cor": "#FFA500",
                         "mensagens": [],
-                        "nivelDisponibilidade": "alto"
+                        "nivelDisponibilidade": "médio"
                     }
                 ]
             },
@@ -609,7 +629,7 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "7.010",
+                        "quantidade": "10.209",
                         "cor": "#FFA500",
                         "mensagens": [],
                         "nivelDisponibilidade": "médio"
@@ -629,10 +649,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "38.580",
-                        "cor": "#FFA500",
+                        "quantidade": "51.015",
+                        "cor": "#008000",
                         "mensagens": [],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "alto"
                     }
                 ]
             },
@@ -649,10 +669,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "33.840",
-                        "cor": "#008000",
+                        "quantidade": "21.440",
+                        "cor": "#FFA500",
                         "mensagens": [],
-                        "nivelDisponibilidade": "alto"
+                        "nivelDisponibilidade": "médio"
                     }
                 ]
             },
@@ -669,10 +689,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "6.720",
-                        "cor": "#008000",
+                        "quantidade": "3.170",
+                        "cor": "#FFA500",
                         "mensagens": [],
-                        "nivelDisponibilidade": "alto"
+                        "nivelDisponibilidade": "médio"
                     }
                 ]
             },
@@ -689,7 +709,7 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "26.880",
+                        "quantidade": "36.820",
                         "cor": "#FFA500",
                         "mensagens": [],
                         "nivelDisponibilidade": "médio"
@@ -709,7 +729,7 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "36.450",
+                        "quantidade": "54.320",
                         "cor": "#FFA500",
                         "mensagens": [],
                         "nivelDisponibilidade": "médio"
@@ -729,10 +749,30 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "430",
-                        "cor": "#FF0000",
+                        "quantidade": "5.660",
+                        "cor": "#FFA500",
                         "mensagens": [],
-                        "nivelDisponibilidade": "baixo"
+                        "nivelDisponibilidade": "médio"
+                    }
+                ]
+            },
+            {
+                "distance": 5507,
+                "cor": "#166D78",
+                "unidade": "UBS ZUMBI DOS PALMARES",
+                "endereco": "RUA HUMBERTO DE ALMEIDA , 279 - JARDIM SAO LUIZ",
+                "expediente": "De Segunda a Sexta: 07:00 até 19:00. ",
+                "coordenadas": {
+                    "lat": -23.6719969,
+                    "lng": -46.7459749
+                },
+                "quantidades": [
+                    {
+                        "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
+                        "quantidade": "12.560",
+                        "cor": "#008000",
+                        "mensagens": [],
+                        "nivelDisponibilidade": "alto"
                     }
                 ]
             },
@@ -749,10 +789,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "12.280",
-                        "cor": "#FFA500",
+                        "quantidade": "18.180",
+                        "cor": "#008000",
                         "mensagens": [],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "alto"
                     }
                 ]
             },
@@ -769,10 +809,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "7.070",
-                        "cor": "#FFA500",
+                        "quantidade": "1.210",
+                        "cor": "#FF0000",
                         "mensagens": [],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -789,10 +829,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "2.760",
-                        "cor": "#FF0000",
+                        "quantidade": "7.960",
+                        "cor": "#FFA500",
                         "mensagens": [],
-                        "nivelDisponibilidade": "baixo"
+                        "nivelDisponibilidade": "médio"
                     }
                 ]
             },
@@ -809,10 +849,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "11.589",
-                        "cor": "#FF0000",
+                        "quantidade": "37.720",
+                        "cor": "#FFA500",
                         "mensagens": [],
-                        "nivelDisponibilidade": "baixo"
+                        "nivelDisponibilidade": "médio"
                     }
                 ]
             },
@@ -829,10 +869,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "40.230",
-                        "cor": "#008000",
+                        "quantidade": "28.430",
+                        "cor": "#FFA500",
                         "mensagens": [],
-                        "nivelDisponibilidade": "alto"
+                        "nivelDisponibilidade": "médio"
                     }
                 ]
             },
@@ -849,10 +889,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "18.960",
-                        "cor": "#FFA500",
+                        "quantidade": "10.350",
+                        "cor": "#FF0000",
                         "mensagens": [],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -869,7 +909,7 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "9.300",
+                        "quantidade": "15.090",
                         "cor": "#FFA500",
                         "mensagens": [],
                         "nivelDisponibilidade": "médio"
@@ -889,10 +929,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "5.060",
-                        "cor": "#FF0000",
+                        "quantidade": "13.040",
+                        "cor": "#008000",
                         "mensagens": [],
-                        "nivelDisponibilidade": "baixo"
+                        "nivelDisponibilidade": "alto"
                     }
                 ]
             },
@@ -909,7 +949,27 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "12.300",
+                        "quantidade": "16.420",
+                        "cor": "#FFA500",
+                        "mensagens": [],
+                        "nivelDisponibilidade": "médio"
+                    }
+                ]
+            },
+            {
+                "distance": 6095,
+                "cor": "#166D78",
+                "unidade": "UBS BRASILIA - M BOI",
+                "endereco": "RUA MAPORÉ , 352 - JARDIM CASABLANCA",
+                "expediente": "De Segunda a Sexta: 07:00 até 19:00. ",
+                "coordenadas": {
+                    "lat": -23.65389,
+                    "lng": -46.7450725
+                },
+                "quantidades": [
+                    {
+                        "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
+                        "quantidade": "9.930",
                         "cor": "#FFA500",
                         "mensagens": [],
                         "nivelDisponibilidade": "médio"
@@ -929,10 +989,30 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "10.103",
-                        "cor": "#FFA500",
+                        "quantidade": "3.969",
+                        "cor": "#FF0000",
                         "mensagens": [],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
+                    }
+                ]
+            },
+            {
+                "distance": 6157,
+                "cor": "#166D78",
+                "unidade": "UBS PARQUE SANTO ANTONIO II",
+                "endereco": "RUA ANTÔNIO RAMOS ROSA , 898 - PARQUE SANTO ANTÔNIO",
+                "expediente": "De Segunda a Sexta: 07:00 até 19:00. ",
+                "coordenadas": {
+                    "lat": -23.6613455,
+                    "lng": -46.7494464
+                },
+                "quantidades": [
+                    {
+                        "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
+                        "quantidade": "14.400",
+                        "cor": "#008000",
+                        "mensagens": [],
+                        "nivelDisponibilidade": "alto"
                     }
                 ]
             },
@@ -949,7 +1029,7 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "8.160",
+                        "quantidade": "13.730",
                         "cor": "#FFA500",
                         "mensagens": [],
                         "nivelDisponibilidade": "médio"
@@ -969,7 +1049,7 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "8.212",
+                        "quantidade": "13.992",
                         "cor": "#FFA500",
                         "mensagens": [],
                         "nivelDisponibilidade": "médio"
@@ -989,7 +1069,7 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "34.468",
+                        "quantidade": "36.580",
                         "cor": "#FFA500",
                         "mensagens": [],
                         "nivelDisponibilidade": "médio"
@@ -1009,10 +1089,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "16.300",
-                        "cor": "#008000",
+                        "quantidade": "11.950",
+                        "cor": "#FFA500",
                         "mensagens": [],
-                        "nivelDisponibilidade": "alto"
+                        "nivelDisponibilidade": "médio"
                     }
                 ]
             },
@@ -1029,10 +1109,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "6.340",
-                        "cor": "#FFA500",
+                        "quantidade": "290",
+                        "cor": "#FF0000",
                         "mensagens": [],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -1049,10 +1129,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "11.288",
-                        "cor": "#FFA500",
+                        "quantidade": "4.340",
+                        "cor": "#FF0000",
                         "mensagens": [],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -1069,7 +1149,7 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "3.808",
+                        "quantidade": "4.578",
                         "cor": "#FFA500",
                         "mensagens": [],
                         "nivelDisponibilidade": "médio"
@@ -1089,10 +1169,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "4.490",
-                        "cor": "#FF0000",
+                        "quantidade": "10.530",
+                        "cor": "#FFA500",
                         "mensagens": [],
-                        "nivelDisponibilidade": "baixo"
+                        "nivelDisponibilidade": "médio"
                     }
                 ]
             },
@@ -1109,7 +1189,7 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "33.570",
+                        "quantidade": "25.850",
                         "cor": "#FFA500",
                         "mensagens": [],
                         "nivelDisponibilidade": "médio"
@@ -1129,10 +1209,10 @@
                 "quantidades": [
                     {
                         "medicamento": "DIPIRONA SODICA 500 MG COMPRIMIDO",
-                        "quantidade": "25.150",
-                        "cor": "#FFA500",
+                        "quantidade": "8.990",
+                        "cor": "#FF0000",
                         "mensagens": [],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             }

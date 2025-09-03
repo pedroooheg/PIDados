@@ -1,0 +1,102 @@
+[
+    {
+        "_id": "683f80b33dad9c8450ff84a1",
+        "logradouro_full": "Rua Pedro Correia Garção",
+        "bairro": "Jardim Pouso Alegre",
+        "cidade": "São Paulo",
+        "uf": "SP",
+        "logradouro": "Pedro Correia Garção",
+        "latitude": -23.7338742,
+        "longitude": -46.7145636
+    },
+    {
+        "_id": "683f80b13dad9c8450ff6de3",
+        "logradouro_full": "Rua Pero Correia",
+        "bairro": "Vila Mariana",
+        "cidade": "São Paulo",
+        "uf": "SP",
+        "logradouro": "Pero Correia",
+        "latitude": -23.5845358,
+        "longitude": -46.6234568
+    },
+    {
+        "_id": "683f80b13dad9c8450ff6de2",
+        "logradouro_full": "Rua Pero Correia",
+        "bairro": "Vila Mariana",
+        "cidade": "São Paulo",
+        "uf": "SP",
+        "logradouro": "Pero Correia",
+        "latitude": -23.5845279,
+        "longitude": -46.6234794
+    },
+    {
+        "_id": "683f80b53dad9c8450ffa2fa",
+        "logradouro_full": "Rua Pedro Correia Soares",
+        "bairro": "Jardim Ester",
+        "cidade": "São Paulo",
+        "uf": "SP",
+        "logradouro": "Pedro Correia Soares",
+        "latitude": -23.5724978,
+        "longitude": -46.7592738
+    },
+    {
+        "_id": "683f80b73dad9c8450ffbbfb",
+        "logradouro_full": "Rua Pedro Correia da Silva",
+        "bairro": "Chácara Santana",
+        "cidade": "São Paulo",
+        "uf": "SP",
+        "logradouro": "Pedro Correia da Silva",
+        "latitude": -23.668148,
+        "longitude": -46.749767
+    },
+    {
+        "_id": "683f80a63dad9c8450ff02bf",
+        "logradouro_full": "Rua Pedro Vicente, 165 Clique e Retire Correios",
+        "bairro": "Luz",
+        "cidade": "São Paulo",
+        "uf": "SP",
+        "logradouro": "Rua Pedro Vicente, 165 Clique e Retire Correios",
+        "latitude": -23.5249337,
+        "longitude": -46.6273417
+    },
+    {
+        "_id": "683f80b73dad9c8450ffbd68",
+        "logradouro_full": "Rua José Pedro de Oliveira Corrêa",
+        "bairro": "Jardim Mazza",
+        "cidade": "São Paulo",
+        "uf": "SP",
+        "logradouro": "José Pedro de Oliveira Corrêa",
+        "latitude": -23.6741171,
+        "longitude": -46.751873
+    },
+    {
+        "_id": "683f80b83dad9c8450ffcfae",
+        "logradouro_full": "Rua Pedro Corte Real",
+        "bairro": "Parque São Rafael",
+        "cidade": "São Paulo",
+        "uf": "SP",
+        "logradouro": "Pedro Corte Real",
+        "latitude": -23.6195357,
+        "longitude": -46.4760635
+    },
+    {
+        "_id": "683f80aa3dad9c8450ff26e3",
+        "logradouro_full": "Rua Pedro Monteiro de Souza",
+        "bairro": "Vila Ramos",
+        "cidade": "São Paulo",
+        "uf": "SP",
+        "logradouro": "Pedro Monteiro de Souza",
+        "latitude": -23.4812657,
+        "longitude": -46.6801544
+    },
+    {
+        "_id": "683f80aa3dad9c8450ff26c8",
+        "logradouro_full": "Rua Cedro Japonês",
+        "bairro": "Vila Nova Parada",
+        "cidade": "São Paulo",
+        "uf": "SP",
+        "logradouro": "Cedro Japonês",
+        "latitude": -23.4402286,
+        "longitude": -46.7117764
+    }
+]

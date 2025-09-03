@@ -20,10 +20,10 @@ payload = {"logradouro":"Rua Pedro correia garcao"}
 
 
 response = requests.post(url, headers=headers, json=payload)
-if response.status_code == 200:
+if response.status_code in [200, 201]:
     try:
         data = response.json()  
-        with open("resposta_api_endereco.json", "w", encoding="utf-8") as f:
+        with open("data/resposta_api_endereco.json", "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=4)  # Salva formatado
         print("Resposta salva em 'resposta_api.json'")
     except Exception as e:

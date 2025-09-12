@@ -1,6 +1,6 @@
 {
     "result": {
-        "resumo": "Encontradas 56 unidades com 1 ou mais medicamentos da lista",
+        "resumo": "Encontradas 50 unidades com 1 ou mais medicamentos da lista",
         "legendas": [
             {
                 "cor": "#008000",
@@ -17,64 +17,6 @@
         ],
         "disponibilidade": [
             {
-                "distance": 35,
-                "cor": "#166D78",
-                "unidade": "AMA / UBS AGUA RASA",
-                "endereco": "RUA SERRA DE JAIRÉ , 1480 - AGUA RASA",
-                "expediente": "De Segunda a Sexta: 07:00 até 19:00. | Sábado: 07:00 até 19:00. ",
-                "coordenadas": {
-                    "lat": -23.5538442,
-                    "lng": -46.5799128
-                },
-                "quantidades": [
-                    {
-                        "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "136",
-                        "cor": "#FF0000",
-                        "mensagens": [
-                            {
-                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
-                                "descricao": "Este medicamento possui regras específicas para entrega. Veja aqui e/ou procure uma Unidade de Saúde para mais informações."
-                            },
-                            {
-                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/Alendronato_70%20mg_Formulario_dispensa_Densitometria_ossea.pdf",
-                                "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
-                            }
-                        ],
-                        "nivelDisponibilidade": "baixo"
-                    }
-                ]
-            },
-            {
-                "distance": 823,
-                "cor": "#166D78",
-                "unidade": "UBS VILA GUARANI",
-                "endereco": "RUA TERESINA , 123 - VILA BERTIOGA",
-                "expediente": "De Segunda a Sexta: 07:00 até 19:00. ",
-                "coordenadas": {
-                    "lat": -23.5606215,
-                    "lng": -46.582833
-                },
-                "quantidades": [
-                    {
-                        "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "100",
-                        "cor": "#FF0000",
-                        "mensagens": [
-                            {
-                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
-                                "descricao": "Este medicamento possui regras específicas para entrega. Veja aqui e/ou procure uma Unidade de Saúde para mais informações."
-                            },
-                            {
-                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/Alendronato_70%20mg_Formulario_dispensa_Densitometria_ossea.pdf",
-                                "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
-                            }
-                        ],
-                        "nivelDisponibilidade": "baixo"
-                    }
-                ]
-            },
-            {
                 "distance": 1980,
                 "cor": "#166D78",
                 "unidade": "UBS VILA BERTIOGA - DOMINGOS DELASCIO",
@@ -87,8 +29,8 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "448",
-                        "cor": "#FFA500",
+                        "quantidade": "220",
+                        "cor": "#FF0000",
                         "mensagens": [
                             {
                                 "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
@@ -99,7 +41,7 @@
                                 "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
                             }
                         ],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -116,7 +58,7 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "420",
+                        "quantidade": "248",
                         "cor": "#FFA500",
                         "mensagens": [
                             {
@@ -145,8 +87,8 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "260",
-                        "cor": "#FFA500",
+                        "quantidade": "96",
+                        "cor": "#FF0000",
                         "mensagens": [
                             {
                                 "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
@@ -157,7 +99,7 @@
                                 "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
                             }
                         ],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -174,8 +116,8 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "260",
-                        "cor": "#FFA500",
+                        "quantidade": "48",
+                        "cor": "#FF0000",
                         "mensagens": [
                             {
                                 "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
@@ -186,7 +128,7 @@
                                 "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
                             }
                         ],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -203,36 +145,7 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "220",
-                        "cor": "#FFA500",
-                        "mensagens": [
-                            {
-                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
-                                "descricao": "Este medicamento possui regras específicas para entrega. Veja aqui e/ou procure uma Unidade de Saúde para mais informações."
-                            },
-                            {
-                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/Alendronato_70%20mg_Formulario_dispensa_Densitometria_ossea.pdf",
-                                "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
-                            }
-                        ],
-                        "nivelDisponibilidade": "médio"
-                    }
-                ]
-            },
-            {
-                "distance": 2942,
-                "cor": "#166D78",
-                "unidade": "UBS VILA FORMOSA I - ANTONIO DA S E OLIVEIRA",
-                "endereco": "RUA ACURUÍ , 720 - VILA FORMOSA",
-                "expediente": "De Segunda a Sexta: 07:00 até 19:00. ",
-                "coordenadas": {
-                    "lat": -23.5621648,
-                    "lng": -46.5528939
-                },
-                "quantidades": [
-                    {
-                        "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "104",
+                        "quantidade": "3",
                         "cor": "#FF0000",
                         "mensagens": [
                             {
@@ -261,8 +174,8 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "256",
-                        "cor": "#FFA500",
+                        "quantidade": "9",
+                        "cor": "#FF0000",
                         "mensagens": [
                             {
                                 "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
@@ -273,7 +186,7 @@
                                 "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
                             }
                         ],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -290,7 +203,7 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "976",
+                        "quantidade": "492",
                         "cor": "#FFA500",
                         "mensagens": [
                             {
@@ -319,8 +232,8 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "120",
-                        "cor": "#FFA500",
+                        "quantidade": "16",
+                        "cor": "#FF0000",
                         "mensagens": [
                             {
                                 "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
@@ -331,7 +244,7 @@
                                 "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
                             }
                         ],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -348,36 +261,7 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "244",
-                        "cor": "#FFA500",
-                        "mensagens": [
-                            {
-                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
-                                "descricao": "Este medicamento possui regras específicas para entrega. Veja aqui e/ou procure uma Unidade de Saúde para mais informações."
-                            },
-                            {
-                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/Alendronato_70%20mg_Formulario_dispensa_Densitometria_ossea.pdf",
-                                "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
-                            }
-                        ],
-                        "nivelDisponibilidade": "médio"
-                    }
-                ]
-            },
-            {
-                "distance": 4034,
-                "cor": "#166D78",
-                "unidade": "UBS PARQUE NOVO MUNDO I",
-                "endereco": "RUA BENEDITA DORNELLAS CLARO , 451 - JARDIM ANDARAI",
-                "expediente": "De Segunda a Sexta: 06:00 até 19:00. ",
-                "coordenadas": {
-                    "lat": -23.5175438,
-                    "lng": -46.5766397
-                },
-                "quantidades": [
-                    {
-                        "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "112",
+                        "quantidade": "144",
                         "cor": "#FFA500",
                         "mensagens": [
                             {
@@ -406,7 +290,7 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "84",
+                        "quantidade": "60",
                         "cor": "#FFA500",
                         "mensagens": [
                             {
@@ -435,8 +319,8 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "324",
-                        "cor": "#FFA500",
+                        "quantidade": "8",
+                        "cor": "#FF0000",
                         "mensagens": [
                             {
                                 "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
@@ -447,7 +331,7 @@
                                 "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
                             }
                         ],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -464,8 +348,8 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "192",
-                        "cor": "#FFA500",
+                        "quantidade": "80",
+                        "cor": "#FF0000",
                         "mensagens": [
                             {
                                 "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
@@ -476,36 +360,7 @@
                                 "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
                             }
                         ],
-                        "nivelDisponibilidade": "médio"
-                    }
-                ]
-            },
-            {
-                "distance": 4548,
-                "cor": "#166D78",
-                "unidade": "UBS VILA FORMOSA II",
-                "endereco": "RUA OURICURI , 455 - VILA FORMOSA",
-                "expediente": "De Segunda a Sexta: 07:00 até 19:00. ",
-                "coordenadas": {
-                    "lat": -23.5693768,
-                    "lng": -46.5390483
-                },
-                "quantidades": [
-                    {
-                        "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "160",
-                        "cor": "#FFA500",
-                        "mensagens": [
-                            {
-                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
-                                "descricao": "Este medicamento possui regras específicas para entrega. Veja aqui e/ou procure uma Unidade de Saúde para mais informações."
-                            },
-                            {
-                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/Alendronato_70%20mg_Formulario_dispensa_Densitometria_ossea.pdf",
-                                "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
-                            }
-                        ],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -522,8 +377,8 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "252",
-                        "cor": "#FFA500",
+                        "quantidade": "60",
+                        "cor": "#FF0000",
                         "mensagens": [
                             {
                                 "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
@@ -534,7 +389,7 @@
                                 "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
                             }
                         ],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -551,7 +406,7 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "500",
+                        "quantidade": "320",
                         "cor": "#FFA500",
                         "mensagens": [
                             {
@@ -580,268 +435,7 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "344",
-                        "cor": "#FFA500",
-                        "mensagens": [
-                            {
-                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
-                                "descricao": "Este medicamento possui regras específicas para entrega. Veja aqui e/ou procure uma Unidade de Saúde para mais informações."
-                            },
-                            {
-                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/Alendronato_70%20mg_Formulario_dispensa_Densitometria_ossea.pdf",
-                                "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
-                            }
-                        ],
-                        "nivelDisponibilidade": "médio"
-                    }
-                ]
-            },
-            {
-                "distance": 4861,
-                "cor": "#166D78",
-                "unidade": "UBS PARQUE NOVO MUNDO II",
-                "endereco": "RUA SOLDADO ANTÔNIO MATIAS DE CAMARGO , 87 - PARQUE NOVO MUNDO",
-                "expediente": "De Segunda a Sexta: 07:00 até 19:00. ",
-                "coordenadas": {
-                    "lat": -23.5119787,
-                    "lng": -46.5659248
-                },
-                "quantidades": [
-                    {
-                        "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "196",
-                        "cor": "#FFA500",
-                        "mensagens": [
-                            {
-                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
-                                "descricao": "Este medicamento possui regras específicas para entrega. Veja aqui e/ou procure uma Unidade de Saúde para mais informações."
-                            },
-                            {
-                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/Alendronato_70%20mg_Formulario_dispensa_Densitometria_ossea.pdf",
-                                "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
-                            }
-                        ],
-                        "nivelDisponibilidade": "médio"
-                    }
-                ]
-            },
-            {
-                "distance": 4872,
-                "cor": "#166D78",
-                "unidade": "UBS VILA ARICANDUVA",
-                "endereco": "RUA ANTÔNIO LINDORO DA SILVA , 284 - VILA ARICANDUVA",
-                "expediente": "De Segunda a Sexta: 07:00 até 19:00. ",
-                "coordenadas": {
-                    "lat": -23.535097,
-                    "lng": -46.5369313
-                },
-                "quantidades": [
-                    {
-                        "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "164",
-                        "cor": "#FFA500",
-                        "mensagens": [
-                            {
-                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
-                                "descricao": "Este medicamento possui regras específicas para entrega. Veja aqui e/ou procure uma Unidade de Saúde para mais informações."
-                            },
-                            {
-                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/Alendronato_70%20mg_Formulario_dispensa_Densitometria_ossea.pdf",
-                                "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
-                            }
-                        ],
-                        "nivelDisponibilidade": "médio"
-                    }
-                ]
-            },
-            {
-                "distance": 4891,
-                "cor": "#166D78",
-                "unidade": "UBS INTEGRADA VILA GUILHERME",
-                "endereco": "RUA JOÃO VENTURA BATISTA , 615 - VILA GUILHERME",
-                "expediente": "De Segunda a Sexta: 07:00 até 19:00. ",
-                "coordenadas": {
-                    "lat": -23.5162389,
-                    "lng": -46.6053364
-                },
-                "quantidades": [
-                    {
-                        "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "156",
-                        "cor": "#FFA500",
-                        "mensagens": [
-                            {
-                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
-                                "descricao": "Este medicamento possui regras específicas para entrega. Veja aqui e/ou procure uma Unidade de Saúde para mais informações."
-                            },
-                            {
-                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/Alendronato_70%20mg_Formulario_dispensa_Densitometria_ossea.pdf",
-                                "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
-                            }
-                        ],
-                        "nivelDisponibilidade": "médio"
-                    }
-                ]
-            },
-            {
-                "distance": 4912,
-                "cor": "#166D78",
-                "unidade": "AMA SE / 24H",
-                "endereco": "RUA FREDERICO ALVARENGA , 259 - SÉ",
-                "expediente": "De Segunda a Sexta: 00:00 até 23:59. | Sábado: 00:00 até 23:59. | Domingo: 00:00 até 23:59.",
-                "coordenadas": {
-                    "lat": -23.5510565,
-                    "lng": -46.628234
-                },
-                "quantidades": [
-                    {
-                        "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "308",
-                        "cor": "#FFA500",
-                        "mensagens": [
-                            {
-                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
-                                "descricao": "Este medicamento possui regras específicas para entrega. Veja aqui e/ou procure uma Unidade de Saúde para mais informações."
-                            },
-                            {
-                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/Alendronato_70%20mg_Formulario_dispensa_Densitometria_ossea.pdf",
-                                "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
-                            }
-                        ],
-                        "nivelDisponibilidade": "médio"
-                    }
-                ]
-            },
-            {
-                "distance": 4937,
-                "cor": "#166D78",
-                "unidade": "UBS VILA ALPINA - DR. HERMINIO MOREIRA",
-                "endereco": "RUA PARAMU , 398 - VILA ALPINA",
-                "expediente": "De Segunda a Sexta: 07:00 até 19:00. ",
-                "coordenadas": {
-                    "lat": -23.5964516,
-                    "lng": -46.5675416
-                },
-                "quantidades": [
-                    {
-                        "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "212",
-                        "cor": "#FFA500",
-                        "mensagens": [
-                            {
-                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
-                                "descricao": "Este medicamento possui regras específicas para entrega. Veja aqui e/ou procure uma Unidade de Saúde para mais informações."
-                            },
-                            {
-                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/Alendronato_70%20mg_Formulario_dispensa_Densitometria_ossea.pdf",
-                                "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
-                            }
-                        ],
-                        "nivelDisponibilidade": "médio"
-                    }
-                ]
-            },
-            {
-                "distance": 4981,
-                "cor": "#166D78",
-                "unidade": "UBS VILA NOVA MANCHESTER - ARLINDO GENNARI",
-                "endereco": "PRAÇA HAROLDO DALTRO , 461 - VILA NOVA MANCHESTER",
-                "expediente": "De Segunda a Sexta: 07:00 até 19:00. ",
-                "coordenadas": {
-                    "lat": -23.5465126,
-                    "lng": -46.5319946
-                },
-                "quantidades": [
-                    {
-                        "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "452",
-                        "cor": "#FFA500",
-                        "mensagens": [
-                            {
-                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
-                                "descricao": "Este medicamento possui regras específicas para entrega. Veja aqui e/ou procure uma Unidade de Saúde para mais informações."
-                            },
-                            {
-                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/Alendronato_70%20mg_Formulario_dispensa_Densitometria_ossea.pdf",
-                                "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
-                            }
-                        ],
-                        "nivelDisponibilidade": "médio"
-                    }
-                ]
-            },
-            {
-                "distance": 4993,
-                "cor": "#166D78",
-                "unidade": "UBS VILA FORMOSA - COM. JOSE GONZALEZ",
-                "endereco": "RUA NOSSA SENHORA DAS DORES , 350 - VILA FORMOSA",
-                "expediente": "De Segunda a Sexta: 07:00 até 19:00. ",
-                "coordenadas": {
-                    "lat": -23.5701056,
-                    "lng": -46.5346606
-                },
-                "quantidades": [
-                    {
-                        "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "312",
-                        "cor": "#008000",
-                        "mensagens": [
-                            {
-                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
-                                "descricao": "Este medicamento possui regras específicas para entrega. Veja aqui e/ou procure uma Unidade de Saúde para mais informações."
-                            },
-                            {
-                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/Alendronato_70%20mg_Formulario_dispensa_Densitometria_ossea.pdf",
-                                "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
-                            }
-                        ],
-                        "nivelDisponibilidade": "alto"
-                    }
-                ]
-            },
-            {
-                "distance": 5094,
-                "cor": "#166D78",
-                "unidade": "AMA / UBS SAO VICENTE DE PAULA",
-                "endereco": "RUA VICENTE DA COSTA , 289 - IPIRANGA",
-                "expediente": "De Segunda a Sexta: 07:00 até 19:00. | Sábado: 07:00 até 19:00. ",
-                "coordenadas": {
-                    "lat": -23.5909937,
-                    "lng": -46.6090109
-                },
-                "quantidades": [
-                    {
-                        "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "576",
-                        "cor": "#FFA500",
-                        "mensagens": [
-                            {
-                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
-                                "descricao": "Este medicamento possui regras específicas para entrega. Veja aqui e/ou procure uma Unidade de Saúde para mais informações."
-                            },
-                            {
-                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/Alendronato_70%20mg_Formulario_dispensa_Densitometria_ossea.pdf",
-                                "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
-                            }
-                        ],
-                        "nivelDisponibilidade": "médio"
-                    }
-                ]
-            },
-            {
-                "distance": 5190,
-                "cor": "#166D78",
-                "unidade": "AMA / UBS PARI",
-                "endereco": "RUA DAS OLARIAS , 503 - CANINDE",
-                "expediente": "De Segunda a Sexta: 07:00 até 19:00. | Sábado: 07:00 até 19:00. ",
-                "coordenadas": {
-                    "lat": -23.5259346,
-                    "lng": -46.6210856
-                },
-                "quantidades": [
-                    {
-                        "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "8",
+                        "quantidade": "144",
                         "cor": "#FF0000",
                         "mensagens": [
                             {
@@ -858,19 +452,193 @@
                 ]
             },
             {
-                "distance": 5384,
+                "distance": 4861,
                 "cor": "#166D78",
-                "unidade": "UBS JARDIM JAPAO",
-                "endereco": "RUA SOBRAL JÚNIOR , 452 - VILA MARIA ALTA",
-                "expediente": "De Segunda a Sexta: 06:00 até 19:00. ",
+                "unidade": "UBS PARQUE NOVO MUNDO II",
+                "endereco": "RUA SOLDADO ANTÔNIO MATIAS DE CAMARGO , 87 - PARQUE NOVO MUNDO",
+                "expediente": "De Segunda a Sexta: 07:00 até 19:00. ",
                 "coordenadas": {
-                    "lat": -23.5058088,
-                    "lng": -46.5880279
+                    "lat": -23.5119787,
+                    "lng": -46.5659248
                 },
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "300",
+                        "quantidade": "88",
+                        "cor": "#FF0000",
+                        "mensagens": [
+                            {
+                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
+                                "descricao": "Este medicamento possui regras específicas para entrega. Veja aqui e/ou procure uma Unidade de Saúde para mais informações."
+                            },
+                            {
+                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/Alendronato_70%20mg_Formulario_dispensa_Densitometria_ossea.pdf",
+                                "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
+                            }
+                        ],
+                        "nivelDisponibilidade": "baixo"
+                    }
+                ]
+            },
+            {
+                "distance": 4872,
+                "cor": "#166D78",
+                "unidade": "UBS VILA ARICANDUVA",
+                "endereco": "RUA ANTÔNIO LINDORO DA SILVA , 284 - VILA ARICANDUVA",
+                "expediente": "De Segunda a Sexta: 07:00 até 19:00. ",
+                "coordenadas": {
+                    "lat": -23.535097,
+                    "lng": -46.5369313
+                },
+                "quantidades": [
+                    {
+                        "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
+                        "quantidade": "12",
+                        "cor": "#FF0000",
+                        "mensagens": [
+                            {
+                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
+                                "descricao": "Este medicamento possui regras específicas para entrega. Veja aqui e/ou procure uma Unidade de Saúde para mais informações."
+                            },
+                            {
+                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/Alendronato_70%20mg_Formulario_dispensa_Densitometria_ossea.pdf",
+                                "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
+                            }
+                        ],
+                        "nivelDisponibilidade": "baixo"
+                    }
+                ]
+            },
+            {
+                "distance": 4891,
+                "cor": "#166D78",
+                "unidade": "UBS INTEGRADA VILA GUILHERME",
+                "endereco": "RUA JOÃO VENTURA BATISTA , 615 - VILA GUILHERME",
+                "expediente": "De Segunda a Sexta: 07:00 até 19:00. ",
+                "coordenadas": {
+                    "lat": -23.5162389,
+                    "lng": -46.6053364
+                },
+                "quantidades": [
+                    {
+                        "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
+                        "quantidade": "52",
+                        "cor": "#FF0000",
+                        "mensagens": [
+                            {
+                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
+                                "descricao": "Este medicamento possui regras específicas para entrega. Veja aqui e/ou procure uma Unidade de Saúde para mais informações."
+                            },
+                            {
+                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/Alendronato_70%20mg_Formulario_dispensa_Densitometria_ossea.pdf",
+                                "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
+                            }
+                        ],
+                        "nivelDisponibilidade": "baixo"
+                    }
+                ]
+            },
+            {
+                "distance": 4912,
+                "cor": "#166D78",
+                "unidade": "AMA SE / 24H",
+                "endereco": "RUA FREDERICO ALVARENGA , 259 - SÉ",
+                "expediente": "De Segunda a Sexta: 00:00 até 23:59. | Sábado: 00:00 até 23:59. | Domingo: 00:00 até 23:59.",
+                "coordenadas": {
+                    "lat": -23.5510565,
+                    "lng": -46.628234
+                },
+                "quantidades": [
+                    {
+                        "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
+                        "quantidade": "32",
+                        "cor": "#FF0000",
+                        "mensagens": [
+                            {
+                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
+                                "descricao": "Este medicamento possui regras específicas para entrega. Veja aqui e/ou procure uma Unidade de Saúde para mais informações."
+                            },
+                            {
+                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/Alendronato_70%20mg_Formulario_dispensa_Densitometria_ossea.pdf",
+                                "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
+                            }
+                        ],
+                        "nivelDisponibilidade": "baixo"
+                    }
+                ]
+            },
+            {
+                "distance": 4937,
+                "cor": "#166D78",
+                "unidade": "UBS VILA ALPINA - DR. HERMINIO MOREIRA",
+                "endereco": "RUA PARAMU , 398 - VILA ALPINA",
+                "expediente": "De Segunda a Sexta: 07:00 até 19:00. ",
+                "coordenadas": {
+                    "lat": -23.5964516,
+                    "lng": -46.5675416
+                },
+                "quantidades": [
+                    {
+                        "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
+                        "quantidade": "32",
+                        "cor": "#FF0000",
+                        "mensagens": [
+                            {
+                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
+                                "descricao": "Este medicamento possui regras específicas para entrega. Veja aqui e/ou procure uma Unidade de Saúde para mais informações."
+                            },
+                            {
+                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/Alendronato_70%20mg_Formulario_dispensa_Densitometria_ossea.pdf",
+                                "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
+                            }
+                        ],
+                        "nivelDisponibilidade": "baixo"
+                    }
+                ]
+            },
+            {
+                "distance": 4981,
+                "cor": "#166D78",
+                "unidade": "UBS VILA NOVA MANCHESTER - ARLINDO GENNARI",
+                "endereco": "PRAÇA HAROLDO DALTRO , 461 - VILA NOVA MANCHESTER",
+                "expediente": "De Segunda a Sexta: 07:00 até 19:00. ",
+                "coordenadas": {
+                    "lat": -23.5465126,
+                    "lng": -46.5319946
+                },
+                "quantidades": [
+                    {
+                        "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
+                        "quantidade": "232",
+                        "cor": "#FF0000",
+                        "mensagens": [
+                            {
+                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
+                                "descricao": "Este medicamento possui regras específicas para entrega. Veja aqui e/ou procure uma Unidade de Saúde para mais informações."
+                            },
+                            {
+                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/Alendronato_70%20mg_Formulario_dispensa_Densitometria_ossea.pdf",
+                                "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
+                            }
+                        ],
+                        "nivelDisponibilidade": "baixo"
+                    }
+                ]
+            },
+            {
+                "distance": 4993,
+                "cor": "#166D78",
+                "unidade": "UBS VILA FORMOSA - COM. JOSE GONZALEZ",
+                "endereco": "RUA NOSSA SENHORA DAS DORES , 350 - VILA FORMOSA",
+                "expediente": "De Segunda a Sexta: 07:00 até 19:00. ",
+                "coordenadas": {
+                    "lat": -23.5701056,
+                    "lng": -46.5346606
+                },
+                "quantidades": [
+                    {
+                        "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
+                        "quantidade": "148",
                         "cor": "#FFA500",
                         "mensagens": [
                             {
@@ -883,6 +651,93 @@
                             }
                         ],
                         "nivelDisponibilidade": "médio"
+                    }
+                ]
+            },
+            {
+                "distance": 5094,
+                "cor": "#166D78",
+                "unidade": "AMA / UBS SAO VICENTE DE PAULA",
+                "endereco": "RUA VICENTE DA COSTA , 289 - IPIRANGA",
+                "expediente": "De Segunda a Sexta: 07:00 até 19:00. | Sábado: 07:00 até 19:00. ",
+                "coordenadas": {
+                    "lat": -23.5909937,
+                    "lng": -46.6090109
+                },
+                "quantidades": [
+                    {
+                        "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
+                        "quantidade": "376",
+                        "cor": "#FFA500",
+                        "mensagens": [
+                            {
+                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
+                                "descricao": "Este medicamento possui regras específicas para entrega. Veja aqui e/ou procure uma Unidade de Saúde para mais informações."
+                            },
+                            {
+                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/Alendronato_70%20mg_Formulario_dispensa_Densitometria_ossea.pdf",
+                                "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
+                            }
+                        ],
+                        "nivelDisponibilidade": "médio"
+                    }
+                ]
+            },
+            {
+                "distance": 5384,
+                "cor": "#166D78",
+                "unidade": "UBS JARDIM JAPAO",
+                "endereco": "RUA SOBRAL JÚNIOR , 452 - VILA MARIA ALTA",
+                "expediente": "De Segunda a Sexta: 06:00 até 19:00. ",
+                "coordenadas": {
+                    "lat": -23.5058088,
+                    "lng": -46.5880279
+                },
+                "quantidades": [
+                    {
+                        "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
+                        "quantidade": "140",
+                        "cor": "#FF0000",
+                        "mensagens": [
+                            {
+                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
+                                "descricao": "Este medicamento possui regras específicas para entrega. Veja aqui e/ou procure uma Unidade de Saúde para mais informações."
+                            },
+                            {
+                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/Alendronato_70%20mg_Formulario_dispensa_Densitometria_ossea.pdf",
+                                "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
+                            }
+                        ],
+                        "nivelDisponibilidade": "baixo"
+                    }
+                ]
+            },
+            {
+                "distance": 5517,
+                "cor": "#166D78",
+                "unidade": "UBS VILA ESPERANCA - CASSIO BITTENCOURT FILHO",
+                "endereco": "RUA ALVINÓPOLIS , 1350 - VILA ESPERANÇA",
+                "expediente": "De Segunda a Sexta: 07:00 até 19:00. ",
+                "coordenadas": {
+                    "lat": -23.531035,
+                    "lng": -46.5320664
+                },
+                "quantidades": [
+                    {
+                        "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
+                        "quantidade": "92",
+                        "cor": "#FF0000",
+                        "mensagens": [
+                            {
+                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
+                                "descricao": "Este medicamento possui regras específicas para entrega. Veja aqui e/ou procure uma Unidade de Saúde para mais informações."
+                            },
+                            {
+                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/Alendronato_70%20mg_Formulario_dispensa_Densitometria_ossea.pdf",
+                                "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
+                            }
+                        ],
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -899,8 +754,8 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "184",
-                        "cor": "#FFA500",
+                        "quantidade": "64",
+                        "cor": "#FF0000",
                         "mensagens": [
                             {
                                 "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
@@ -911,7 +766,7 @@
                                 "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
                             }
                         ],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -928,7 +783,7 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "516",
+                        "quantidade": "320",
                         "cor": "#FFA500",
                         "mensagens": [
                             {
@@ -957,8 +812,8 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "276",
-                        "cor": "#FFA500",
+                        "quantidade": "172",
+                        "cor": "#FF0000",
                         "mensagens": [
                             {
                                 "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
@@ -969,7 +824,7 @@
                                 "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
                             }
                         ],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -986,8 +841,8 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "224",
-                        "cor": "#FFA500",
+                        "quantidade": "28",
+                        "cor": "#FF0000",
                         "mensagens": [
                             {
                                 "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
@@ -998,7 +853,7 @@
                                 "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
                             }
                         ],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -1015,8 +870,8 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "136",
-                        "cor": "#FFA500",
+                        "quantidade": "72",
+                        "cor": "#FF0000",
                         "mensagens": [
                             {
                                 "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
@@ -1027,7 +882,7 @@
                                 "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
                             }
                         ],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -1044,7 +899,7 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "340",
+                        "quantidade": "204",
                         "cor": "#FFA500",
                         "mensagens": [
                             {
@@ -1073,8 +928,8 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "360",
-                        "cor": "#008000",
+                        "quantidade": "244",
+                        "cor": "#FFA500",
                         "mensagens": [
                             {
                                 "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
@@ -1085,7 +940,7 @@
                                 "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
                             }
                         ],
-                        "nivelDisponibilidade": "alto"
+                        "nivelDisponibilidade": "médio"
                     }
                 ]
             },
@@ -1102,7 +957,7 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "196",
+                        "quantidade": "136",
                         "cor": "#FFA500",
                         "mensagens": [
                             {
@@ -1131,7 +986,7 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "384",
+                        "quantidade": "244",
                         "cor": "#FFA500",
                         "mensagens": [
                             {
@@ -1160,8 +1015,8 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "172",
-                        "cor": "#FFA500",
+                        "quantidade": "28",
+                        "cor": "#FF0000",
                         "mensagens": [
                             {
                                 "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
@@ -1172,7 +1027,7 @@
                                 "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
                             }
                         ],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -1189,8 +1044,8 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "428",
-                        "cor": "#FFA500",
+                        "quantidade": "192",
+                        "cor": "#FF0000",
                         "mensagens": [
                             {
                                 "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
@@ -1201,7 +1056,7 @@
                                 "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
                             }
                         ],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -1218,8 +1073,8 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "288",
-                        "cor": "#FFA500",
+                        "quantidade": "160",
+                        "cor": "#FF0000",
                         "mensagens": [
                             {
                                 "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
@@ -1230,7 +1085,7 @@
                                 "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
                             }
                         ],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -1247,7 +1102,7 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "24",
+                        "quantidade": "20",
                         "cor": "#FFA500",
                         "mensagens": [
                             {
@@ -1276,8 +1131,8 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "116",
-                        "cor": "#FFA500",
+                        "quantidade": "60",
+                        "cor": "#FF0000",
                         "mensagens": [
                             {
                                 "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
@@ -1288,7 +1143,7 @@
                                 "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
                             }
                         ],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -1305,7 +1160,7 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "256",
+                        "quantidade": "168",
                         "cor": "#FFA500",
                         "mensagens": [
                             {
@@ -1334,8 +1189,8 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "98",
-                        "cor": "#FFA500",
+                        "quantidade": "30",
+                        "cor": "#FF0000",
                         "mensagens": [
                             {
                                 "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
@@ -1346,7 +1201,7 @@
                                 "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
                             }
                         ],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -1363,7 +1218,7 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "384",
+                        "quantidade": "244",
                         "cor": "#FFA500",
                         "mensagens": [
                             {
@@ -1392,7 +1247,7 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "228",
+                        "quantidade": "152",
                         "cor": "#FFA500",
                         "mensagens": [
                             {
@@ -1421,8 +1276,8 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "260",
-                        "cor": "#FFA500",
+                        "quantidade": "128",
+                        "cor": "#FF0000",
                         "mensagens": [
                             {
                                 "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
@@ -1433,7 +1288,7 @@
                                 "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
                             }
                         ],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -1450,8 +1305,8 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "256",
-                        "cor": "#FFA500",
+                        "quantidade": "140",
+                        "cor": "#FF0000",
                         "mensagens": [
                             {
                                 "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
@@ -1462,7 +1317,7 @@
                                 "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
                             }
                         ],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -1479,8 +1334,8 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "380",
-                        "cor": "#FFA500",
+                        "quantidade": "212",
+                        "cor": "#FF0000",
                         "mensagens": [
                             {
                                 "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
@@ -1491,7 +1346,7 @@
                                 "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
                             }
                         ],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -1508,7 +1363,7 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "412",
+                        "quantidade": "280",
                         "cor": "#FFA500",
                         "mensagens": [
                             {
@@ -1537,8 +1392,8 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "394",
-                        "cor": "#FFA500",
+                        "quantidade": "206",
+                        "cor": "#FF0000",
                         "mensagens": [
                             {
                                 "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
@@ -1549,7 +1404,7 @@
                                 "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
                             }
                         ],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -1566,8 +1421,8 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "196",
-                        "cor": "#FFA500",
+                        "quantidade": "112",
+                        "cor": "#FF0000",
                         "mensagens": [
                             {
                                 "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
@@ -1578,36 +1433,7 @@
                                 "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
                             }
                         ],
-                        "nivelDisponibilidade": "médio"
-                    }
-                ]
-            },
-            {
-                "distance": 6974,
-                "cor": "#166D78",
-                "unidade": "UBS BOM RETIRO - OCTAVIO AUGUSTO RODOVALHO",
-                "endereco": "RUA TENENTE PENA , 8 - BOM RETIRO",
-                "expediente": "De Segunda a Sexta: 07:00 até 19:00. ",
-                "coordenadas": {
-                    "lat": -23.5263682,
-                    "lng": -46.6417004
-                },
-                "quantidades": [
-                    {
-                        "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "120",
-                        "cor": "#FFA500",
-                        "mensagens": [
-                            {
-                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
-                                "descricao": "Este medicamento possui regras específicas para entrega. Veja aqui e/ou procure uma Unidade de Saúde para mais informações."
-                            },
-                            {
-                                "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/Alendronato_70%20mg_Formulario_dispensa_Densitometria_ossea.pdf",
-                                "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
-                            }
-                        ],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             },
@@ -1624,8 +1450,8 @@
                 "quantidades": [
                     {
                         "medicamento": "ALENDRONATO DE SODIO 70 MG COMPRIMIDO",
-                        "quantidade": "176",
-                        "cor": "#FFA500",
+                        "quantidade": "104",
+                        "cor": "#FF0000",
                         "mensagens": [
                             {
                                 "url": "https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/saude/2%20-%20PORTARIA%20N%202190-SMS_G.pdf",
@@ -1636,7 +1462,7 @@
                                 "descricao": "Necessário formulário para prescrição e dispensação. Veja aqui."
                             }
                         ],
-                        "nivelDisponibilidade": "médio"
+                        "nivelDisponibilidade": "baixo"
                     }
                 ]
             }

@@ -4,11 +4,14 @@ import re
 from pathlib import Path
 from typing import Dict, Any, List, Optional, Iterable
 import MedPerUBS
+from datetime import datetime
 
 
+DT = datetime.now()
+NOME_ARQUIVO = DT.strftime("%d-%m-%y")
 ARQ_UNIDADES = Path("data/ubs_upa.json")
 ARQ_MEDICAMENTOS = Path("data/medicamentos.csv")
-ARQ_SAIDA = Path("data/estoque_por_unidade.json")
+ARQ_SAIDA = Path(f"data/{NOME_ARQUIVO}.json")
 
 DISTANCIA_MAX = 100                 # metros 
 CONSULTA_EM_LOTE = True            # True = chamadas em grupo; False = 1 por medicamento'

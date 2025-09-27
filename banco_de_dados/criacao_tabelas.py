@@ -11,8 +11,12 @@ def criar_tabela_unidades():
             )
             CREATE TABLE Unidades (
                 id_unidade INT PRIMARY KEY IDENTITY(1,1),
+                cnes INT NOT NULL,
                 nome VARCHAR(100) NOT NULL,
-                endereco VARCHAR(150) NOT NULL,
+                logradouro VARCHAR(150) NOT NULL,
+                numero VARCHAR(10),                   
+                bairro VARCHAR(255),                  
+                cep VARCHAR(10),  
                 latitude FLOAT NOT NULL,
                 longitude FLOAT NOT NULL,
                 expediente VARCHAR(100) NOT NULL

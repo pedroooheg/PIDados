@@ -5,8 +5,10 @@ from pathlib import Path
 from typing import Dict, Any, List, Optional, Iterable
 import MedPerUBS
 from datetime import datetime
+import subprocess
+import sys
 
-
+banco = 'banco_de_dados\inserir_dados.py'
 DT = datetime.now()
 NOME_ARQUIVO = DT.strftime("%d-%m-%y")
 ARQ_UNIDADES = Path("data/ubs_upa.json")
@@ -198,3 +200,10 @@ def main():
 
 if __name__ == "__main__":
     main()
+    try:
+        subprocess.run([sys.executable, banco], check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"Erro ao executar banco: {e}")
+    except FileNotFoundError:
+        print(f"Arquivo não encontrado: {banco}")
+    

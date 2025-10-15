@@ -2,6 +2,7 @@ import folium
 from folium.plugins import HeatMap
 import json
 
+
 # 1. Caminho para o seu arquivo JSON
 arquivo_json = 'data/ubs_upa.json'
 
@@ -45,7 +46,6 @@ mapa_ubs = folium.Map(location=centro_mapa, zoom_start=zoom_inicial)
 # 7. Adicionar a camada de mapa de calor
 HeatMap(coordenadas_ubs_upa, radius=15, max_zoom=14).add_to(mapa_ubs)
 
-# 8. Salvar o mapa em um arquivo HTML
 mapa_ubs.save("mapa_de_calor_ubs_upa_centralizado.html")
 
 print("Mapa de calor das UBS/UPAs gerado com sucesso!")

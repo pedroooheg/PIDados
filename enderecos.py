@@ -25,7 +25,7 @@ if response.status_code in [200, 201]:
         data = response.json()  
         with open("data/resposta_api_endereco.json", "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=4)  # Salva formatado
-        print("Resposta salva em 'resposta_api.json'")
+        print("Resposta salva em 'teste_api.json'")
     except Exception as e:
         print("Erro ao converter para JSON:", e)
 else:

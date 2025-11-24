@@ -30,16 +30,6 @@
         "longitude": -46.6234794
     },
     {
-        "_id": "683f80b53dad9c8450ffa2fa",
-        "logradouro_full": "Rua Pedro Correia Soares",
-        "bairro": "Jardim Ester",
-        "cidade": "São Paulo",
-        "uf": "SP",
-        "logradouro": "Pedro Correia Soares",
-        "latitude": -23.5724978,
-        "longitude": -46.7592738
-    },
-    {
         "_id": "683f80b73dad9c8450ffbbfb",
         "logradouro_full": "Rua Pedro Correia da Silva",
         "bairro": "Chácara Santana",
@@ -48,6 +38,16 @@
         "logradouro": "Pedro Correia da Silva",
         "latitude": -23.668148,
         "longitude": -46.749767
+    },
+    {
+        "_id": "683f80b53dad9c8450ffa2fa",
+        "logradouro_full": "Rua Pedro Correia Soares",
+        "bairro": "Jardim Ester",
+        "cidade": "São Paulo",
+        "uf": "SP",
+        "logradouro": "Pedro Correia Soares",
+        "latitude": -23.5724978,
+        "longitude": -46.7592738
     },
     {
         "_id": "683f80a63dad9c8450ff02bf",
@@ -80,23 +80,23 @@
         "longitude": -46.4760635
     },
     {
-        "_id": "683f80aa3dad9c8450ff26e3",
-        "logradouro_full": "Rua Pedro Monteiro de Souza",
-        "bairro": "Vila Ramos",
+        "_id": "683f80a93dad9c8450ff1e7f",
+        "logradouro_full": "Rua Pedro Vitorino",
+        "bairro": "Vila Roque",
         "cidade": "São Paulo",
         "uf": "SP",
-        "logradouro": "Pedro Monteiro de Souza",
-        "latitude": -23.4812657,
-        "longitude": -46.6801544
+        "logradouro": "Pedro Vitorino",
+        "latitude": -23.4756461,
+        "longitude": -46.6521461
     },
     {
-        "_id": "683f80aa3dad9c8450ff26c8",
-        "logradouro_full": "Rua Cedro Japonês",
-        "bairro": "Vila Nova Parada",
+        "_id": "683f80a93dad9c8450ff1e7d",
+        "logradouro_full": "Rua Pero de Coimbra",
+        "bairro": "Vila Roque",
         "cidade": "São Paulo",
         "uf": "SP",
-        "logradouro": "Cedro Japonês",
-        "latitude": -23.4402286,
-        "longitude": -46.7117764
+        "logradouro": "Pero de Coimbra",
+        "latitude": -23.4760031,
+        "longitude": -46.6520479
     }
 ]

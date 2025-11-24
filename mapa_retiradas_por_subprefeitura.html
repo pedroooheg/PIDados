@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e00165fc89f80adc110338d12ed09a9c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+    <div style="position: fixed; bottom: 20px; left: 20px; z-index: 9999;
+                background: white; padding: 10px 12px; border-radius: 8px;
+                box-shadow: 0 2px 6px rgba(0,0,0,.2); font-size: 12px;">
+      <b>Mapa por Subprefeitura</b><br>
+      Heatmap ponderado (escala log até p99).<br>
+      Bolhas azuis proporcionais ao total por subprefeitura.
+    </div>
+    
+    
+            <div class="folium-map" id="map_e00165fc89f80adc110338d12ed09a9c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e00165fc89f80adc110338d12ed09a9c = L.map(
+                "map_e00165fc89f80adc110338d12ed09a9c",
+                {
+                    center: [-23.5504533, -46.6339112],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ded897573acf017a52941be5075a0201 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ded897573acf017a52941be5075a0201.addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+            var heat_map_8a20ce0f25830603a1f61ab034273ec5 = L.heatLayer(
+                [[-23.550430052216736, -46.548130291731596, 0.9244848583068687], [-23.588296096015526, -46.738057832211524, 0.9558094863166033], [-23.642683208940728, -46.73572483036189, 0.986833376953589], [-23.720364719421255, -46.70179456104367, 0.9977355843995589], [-23.51183182164657, -46.66643130337813, 0.9027769322747246], [-23.667415349982917, -46.674452445703004, 0.9712148410108933], [-23.583051720000892, -46.41631900152808, 0.9517797077228671], [-23.507546748924362, -46.47939628433965, 0.9695487588026541], [-23.47654108642168, -46.665147061049694, 0.9851337650148545], [-23.54332354103735, -46.41557085530023, 0.9603335202833603], [-23.587309767601738, -46.60304795919856, 0.9407925005614634], [-23.49331634883583, -46.41708274570736, 0.9765457835901523], [-23.5302126850067, -46.45865418064269, 0.9780536904752899], [-23.64775521581886, -46.6399396634496, 0.9810780852037302], [-23.468032720724985, -46.58223723036629, 0.958631200208408], [-23.522097228178144, -46.69539851502312, 0.8977553985638976], [-23.66734998206765, -46.728466489880475, 1.0], [-23.551001980939386, -46.59838612056709, 0.8604684108500822], [-23.81526645666646, -46.735606009797074, 0.9209134277786979], [-23.518511626890536, -46.52101281687136, 0.9379081020373476], [-23.407068285415424, -46.75309421687395, 0.9516462851180186], [-23.56312289083323, -46.70320171317356, 0.8836600048896264], [-23.48849965931681, -46.72733521687191, 0.9705113500984788], [-23.481274592421936, -46.60366369228914, 0.922692807926715], [-23.651223287435396, -46.707038761045496, 0.8677568350410341], [-23.600357569614758, -46.512645359198444, 0.9879267110467087], [-23.59953750034677, -46.46874487269204, 0.9610983437576974], [-23.500360216626017, -46.45127800337821, 0.9071835999272773], [-23.5479893124978, -46.634684288035125, 0.9535207632448601], [-23.52155166879476, -46.60413813221306, 0.9269601453229791], [-23.598291372734437, -46.64944998618565, 0.8762915119091291], [-23.58259946041313, -46.56132291871817, 0.9169877010004568]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 12,
+  "radius": 30,
+  "blur": 28,
+}
+            );
+        
+    
+            heat_map_8a20ce0f25830603a1f61ab034273ec5.addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+            var circle_marker_066e20c10af469e77e4f4a825cf04dd9 = L.circleMarker(
+                [-23.550430052216736, -46.548130291731596],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.73158317353475, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_b37453d84ba7a4d99cd39da8e8f6ce6d = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_c269e57204b546902f183919d0593b49 = $(`<div id="html_c269e57204b546902f183919d0593b49" style="width: 100.0%; height: 100.0%;"><b>ARICANDUVA/CARRAO/FORMOSA</b><br>Total retirado: 3.324.556</div>`)[0];
+                popup_b37453d84ba7a4d99cd39da8e8f6ce6d.setContent(html_c269e57204b546902f183919d0593b49);
+            
+        
+
+        circle_marker_066e20c10af469e77e4f4a825cf04dd9.bindPopup(popup_b37453d84ba7a4d99cd39da8e8f6ce6d)
+        ;
+
+        
+    
+    
+            circle_marker_066e20c10af469e77e4f4a825cf04dd9.bindTooltip(
+                `<div>
+                     ARICANDUVA/CARRAO/FORMOSA | Total: 3.324.556
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b8bc356b01445dd87f50c61b400d41d7 = L.circleMarker(
+                [-23.588296096015526, -46.738057832211524],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.880192296507464, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_974f22e9d8746e66b941eb66053c97fd = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_578756c620c2373ac4d22bcf1b4b0273 = $(`<div id="html_578756c620c2373ac4d22bcf1b4b0273" style="width: 100.0%; height: 100.0%;"><b>BUTANTA</b><br>Total retirado: 5.529.830</div>`)[0];
+                popup_974f22e9d8746e66b941eb66053c97fd.setContent(html_578756c620c2373ac4d22bcf1b4b0273);
+            
+        
+
+        circle_marker_b8bc356b01445dd87f50c61b400d41d7.bindPopup(popup_974f22e9d8746e66b941eb66053c97fd)
+        ;
+
+        
+    
+    
+            circle_marker_b8bc356b01445dd87f50c61b400d41d7.bindTooltip(
+                `<div>
+                     BUTANTA | Total: 5.529.830
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8c6e03372ca59699d7ca0214a5e07ddf = L.circleMarker(
+                [-23.642683208940728, -46.73572483036189],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.76736115752914, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_5d5e6bd38414bc394fd8c1a855188723 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_443d00ff37d5b9effd602b6c1cf336c1 = $(`<div id="html_443d00ff37d5b9effd602b6c1cf336c1" style="width: 100.0%; height: 100.0%;"><b>CAMPO LIMPO</b><br>Total retirado: 9.153.103</div>`)[0];
+                popup_5d5e6bd38414bc394fd8c1a855188723.setContent(html_443d00ff37d5b9effd602b6c1cf336c1);
+            
+        
+
+        circle_marker_8c6e03372ca59699d7ca0214a5e07ddf.bindPopup(popup_5d5e6bd38414bc394fd8c1a855188723)
+        ;
+
+        
+    
+    
+            circle_marker_8c6e03372ca59699d7ca0214a5e07ddf.bindTooltip(
+                `<div>
+                     CAMPO LIMPO | Total: 9.153.103
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_170c590daa43967fbfcceb1687826e0d = L.circleMarker(
+                [-23.720364719421255, -46.70179456104367],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.690981283383001, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_db37e9cbd05d98092481b059641c1210 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_cf293a062cd8f273e97f93e1a1af41e7 = $(`<div id="html_cf293a062cd8f273e97f93e1a1af41e7" style="width: 100.0%; height: 100.0%;"><b>CAPELA DO SOCORRO</b><br>Total retirado: 10.926.409</div>`)[0];
+                popup_db37e9cbd05d98092481b059641c1210.setContent(html_cf293a062cd8f273e97f93e1a1af41e7);
+            
+        
+
+        circle_marker_170c590daa43967fbfcceb1687826e0d.bindPopup(popup_db37e9cbd05d98092481b059641c1210)
+        ;
+
+        
+    
+    
+            circle_marker_170c590daa43967fbfcceb1687826e0d.bindTooltip(
+                `<div>
+                     CAPELA DO SOCORRO | Total: 10.926.409
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_39fa2ad3735ac0c8aed205ac0edcd18c = L.circleMarker(
+                [-23.51183182164657, -46.66643130337813],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.2170426165242008, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_db5e48e191e1d4b73352a47632e45f43 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_0250cb433128114061f9a4d52331ba90 = $(`<div id="html_0250cb433128114061f9a4d52331ba90" style="width: 100.0%; height: 100.0%;"><b>CASA VERDE/CACHOEIRINHA</b><br>Total retirado: 2.336.663</div>`)[0];
+                popup_db5e48e191e1d4b73352a47632e45f43.setContent(html_0250cb433128114061f9a4d52331ba90);
+            
+        
+
+        circle_marker_39fa2ad3735ac0c8aed205ac0edcd18c.bindPopup(popup_db5e48e191e1d4b73352a47632e45f43)
+        ;
+
+        
+    
+    
+            circle_marker_39fa2ad3735ac0c8aed205ac0edcd18c.bindTooltip(
+                `<div>
+                     CASA VERDE/CACHOEIRINHA | Total: 2.336.663
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0963bab282b1e04825ff2de43117d5b1 = L.circleMarker(
+                [-23.667415349982917, -46.674452445703004],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.699114995082342, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_0b66fea6bc8e8a9bd5d5b8a8ff870f9e = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_9846ffe7f192df9bfe108dc735b0c858 = $(`<div id="html_9846ffe7f192df9bfe108dc735b0c858" style="width: 100.0%; height: 100.0%;"><b>CIDADE ADEMAR</b><br>Total retirado: 7.102.122</div>`)[0];
+                popup_0b66fea6bc8e8a9bd5d5b8a8ff870f9e.setContent(html_9846ffe7f192df9bfe108dc735b0c858);
+            
+        
+
+        circle_marker_0963bab282b1e04825ff2de43117d5b1.bindPopup(popup_0b66fea6bc8e8a9bd5d5b8a8ff870f9e)
+        ;
+
+        
+    
+    
+            circle_marker_0963bab282b1e04825ff2de43117d5b1.bindTooltip(
+                `<div>
+                     CIDADE ADEMAR | Total: 7.102.122
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_949fc32b7a4d88db1467a59fa07da137 = L.circleMarker(
+                [-23.583051720000892, -46.41631900152808],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.697699681676015, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_078d0fa0e102a55484e6b716de0aa7b3 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_536fb08d7127eb4353c9eb344456dd49 = $(`<div id="html_536fb08d7127eb4353c9eb344456dd49" style="width: 100.0%; height: 100.0%;"><b>CIDADE TIRADENTES</b><br>Total retirado: 5.179.453</div>`)[0];
+                popup_078d0fa0e102a55484e6b716de0aa7b3.setContent(html_536fb08d7127eb4353c9eb344456dd49);
+            
+        
+
+        circle_marker_949fc32b7a4d88db1467a59fa07da137.bindPopup(popup_078d0fa0e102a55484e6b716de0aa7b3)
+        ;
+
+        
+    
+    
+            circle_marker_949fc32b7a4d88db1467a59fa07da137.bindTooltip(
+                `<div>
+                     CIDADE TIRADENTES | Total: 5.179.453
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9704918d59091a017e0daac0347cc262 = L.circleMarker(
+                [-23.507546748924362, -46.47939628433965],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.600348446271651, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_db06ee270a85b46b6295e64f7e073be7 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_00913e2172187934c9f8a275eacad892 = $(`<div id="html_00913e2172187934c9f8a275eacad892" style="width: 100.0%; height: 100.0%;"><b>ERMELINO MATARAZZO</b><br>Total retirado: 6.912.495</div>`)[0];
+                popup_db06ee270a85b46b6295e64f7e073be7.setContent(html_00913e2172187934c9f8a275eacad892);
+            
+        
+
+        circle_marker_9704918d59091a017e0daac0347cc262.bindPopup(popup_db06ee270a85b46b6295e64f7e073be7)
+        ;
+
+        
+    
+    
+            circle_marker_9704918d59091a017e0daac0347cc262.bindTooltip(
+                `<div>
+                     ERMELINO MATARAZZO | Total: 6.912.495
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bb5745babae4a069350676e40430a286 = L.circleMarker(
+                [-23.47654108642168, -46.665147061049694],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.637545910443926, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_3d2ffd5f0e081c268e4a49357a38e152 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_67b999eda51f3e168916a0ca4cd8f13c = $(`<div id="html_67b999eda51f3e168916a0ca4cd8f13c" style="width: 100.0%; height: 100.0%;"><b>FREGUESIA DO Ó/BRASILANDIA</b><br>Total retirado: 8.903.864</div>`)[0];
+                popup_3d2ffd5f0e081c268e4a49357a38e152.setContent(html_67b999eda51f3e168916a0ca4cd8f13c);
+            
+        
+
+        circle_marker_bb5745babae4a069350676e40430a286.bindPopup(popup_3d2ffd5f0e081c268e4a49357a38e152)
+        ;
+
+        
+    
+    
+            circle_marker_bb5745babae4a069350676e40430a286.bindTooltip(
+                `<div>
+                     FREGUESIA DO Ó/BRASILANDIA | Total: 8.903.864
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d67a35001355cc520d919880a129204c = L.circleMarker(
+                [-23.54332354103735, -46.41557085530023],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.099817096090092, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_26c26fb6275d97da34689b4d6d4158d9 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_304f92f34b04764d08dea98b2869014e = $(`<div id="html_304f92f34b04764d08dea98b2869014e" style="width: 100.0%; height: 100.0%;"><b>GUAIANASES</b><br>Total retirado: 5.951.499</div>`)[0];
+                popup_26c26fb6275d97da34689b4d6d4158d9.setContent(html_304f92f34b04764d08dea98b2869014e);
+            
+        
+
+        circle_marker_d67a35001355cc520d919880a129204c.bindPopup(popup_26c26fb6275d97da34689b4d6d4158d9)
+        ;
+
+        
+    
+    
+            circle_marker_d67a35001355cc520d919880a129204c.bindTooltip(
+                `<div>
+                     GUAIANASES | Total: 5.951.499
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e63b6c4ae5f51a4222a067c0ec896e86 = L.circleMarker(
+                [-23.587309767601738, -46.60304795919856],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.256757331564771, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_f835fd82afff301a1baf5e582170d61c = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_a14b9d3207582447f47f565476546e29 = $(`<div id="html_a14b9d3207582447f47f565476546e29" style="width: 100.0%; height: 100.0%;"><b>IPIRANGA</b><br>Total retirado: 4.332.865</div>`)[0];
+                popup_f835fd82afff301a1baf5e582170d61c.setContent(html_a14b9d3207582447f47f565476546e29);
+            
+        
+
+        circle_marker_e63b6c4ae5f51a4222a067c0ec896e86.bindPopup(popup_f835fd82afff301a1baf5e582170d61c)
+        ;
+
+        
+    
+    
+            circle_marker_e63b6c4ae5f51a4222a067c0ec896e86.bindTooltip(
+                `<div>
+                     IPIRANGA | Total: 4.332.865
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_93be047c9f0e81be78c86f143ac0def6 = L.circleMarker(
+                [-23.49331634883583, -46.41708274570736],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.033710397223542, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_ef370451ec1bcc369010805a7cc94d6d = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_d2a077941c8f6946c920ea86d5d8bacd = $(`<div id="html_d2a077941c8f6946c920ea86d5d8bacd" style="width: 100.0%; height: 100.0%;"><b>ITAIM PAULISTA</b><br>Total retirado: 7.744.529</div>`)[0];
+                popup_ef370451ec1bcc369010805a7cc94d6d.setContent(html_d2a077941c8f6946c920ea86d5d8bacd);
+            
+        
+
+        circle_marker_93be047c9f0e81be78c86f143ac0def6.bindPopup(popup_ef370451ec1bcc369010805a7cc94d6d)
+        ;
+
+        
+    
+    
+            circle_marker_93be047c9f0e81be78c86f143ac0def6.bindTooltip(
+                `<div>
+                     ITAIM PAULISTA | Total: 7.744.529
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b503b9f78749a8303fd9247d916321e8 = L.circleMarker(
+                [-23.5302126850067, -46.45865418064269],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.1337306234271525, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_07208fa44a4b367f9a12cdd8612fc2ed = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_28cb8d43dfa422012afdd1af76344565 = $(`<div id="html_28cb8d43dfa422012afdd1af76344565" style="width: 100.0%; height: 100.0%;"><b>ITAQUERA</b><br>Total retirado: 7.936.563</div>`)[0];
+                popup_07208fa44a4b367f9a12cdd8612fc2ed.setContent(html_28cb8d43dfa422012afdd1af76344565);
+            
+        
+
+        circle_marker_b503b9f78749a8303fd9247d916321e8.bindPopup(popup_07208fa44a4b367f9a12cdd8612fc2ed)
+        ;
+
+        
+    
+    
+            circle_marker_b503b9f78749a8303fd9247d916321e8.bindTooltip(
+                `<div>
+                     ITAQUERA | Total: 7.936.563
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_21bcb1ce9af55265ff899b114d80063d = L.circleMarker(
+                [-23.64775521581886, -46.6399396634496],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.341878050749541, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_4bd86ce724dc3bce3a1f621939e75149 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_65e6ecddc4271fdb7788b8f185d435f2 = $(`<div id="html_65e6ecddc4271fdb7788b8f185d435f2" style="width: 100.0%; height: 100.0%;"><b>JABAQUARA</b><br>Total retirado: 8.336.196</div>`)[0];
+                popup_4bd86ce724dc3bce3a1f621939e75149.setContent(html_65e6ecddc4271fdb7788b8f185d435f2);
+            
+        
+
+        circle_marker_21bcb1ce9af55265ff899b114d80063d.bindPopup(popup_4bd86ce724dc3bce3a1f621939e75149)
+        ;
+
+        
+    
+    
+            circle_marker_21bcb1ce9af55265ff899b114d80063d.bindTooltip(
+                `<div>
+                     JABAQUARA | Total: 8.336.196
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b20f18f25ada9837088d8d6b917c14b3 = L.circleMarker(
+                [-23.468032720724985, -46.58223723036629],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.015276426229479, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_ea9389d774e4ad4ed8d2f06cdc5f3a35 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_01713620e3de868d1f877c329f1f8115 = $(`<div id="html_01713620e3de868d1f877c329f1f8115" style="width: 100.0%; height: 100.0%;"><b>JACANA/TREMEMBE</b><br>Total retirado: 5.789.185</div>`)[0];
+                popup_ea9389d774e4ad4ed8d2f06cdc5f3a35.setContent(html_01713620e3de868d1f877c329f1f8115);
+            
+        
+
+        circle_marker_b20f18f25ada9837088d8d6b917c14b3.bindPopup(popup_ea9389d774e4ad4ed8d2f06cdc5f3a35)
+        ;
+
+        
+    
+    
+            circle_marker_b20f18f25ada9837088d8d6b917c14b3.bindTooltip(
+                `<div>
+                     JACANA/TREMEMBE | Total: 5.789.185
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5532c74aae554177c1fdf377aa909262 = L.circleMarker(
+                [-23.522097228178144, -46.69539851502312],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.1217126125570873, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_b5f9a7f7d6bbb38583fa2118fc9dfff7 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_d63d724db21d4c8b85599c1f56cf387b = $(`<div id="html_d63d724db21d4c8b85599c1f56cf387b" style="width: 100.0%; height: 100.0%;"><b>LAPA</b><br>Total retirado: 2.153.634</div>`)[0];
+                popup_b5f9a7f7d6bbb38583fa2118fc9dfff7.setContent(html_d63d724db21d4c8b85599c1f56cf387b);
+            
+        
+
+        circle_marker_5532c74aae554177c1fdf377aa909262.bindPopup(popup_b5f9a7f7d6bbb38583fa2118fc9dfff7)
+        ;
+
+        
+    
+    
+            circle_marker_5532c74aae554177c1fdf377aa909262.bindTooltip(
+                `<div>
+                     LAPA | Total: 2.153.634
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_33db62828e859427d0d477ea814a9f51 = L.circleMarker(
+                [-23.66734998206765, -46.728466489880475],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_6108466c697ba1779a7a8c708208fed8 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_37f2e707e0f5bb8119b48a53e8c5ef7d = $(`<div id="html_37f2e707e0f5bb8119b48a53e8c5ef7d" style="width: 100.0%; height: 100.0%;"><b>M'BOI MIRIM</b><br>Total retirado: 11.519.710</div>`)[0];
+                popup_6108466c697ba1779a7a8c708208fed8.setContent(html_37f2e707e0f5bb8119b48a53e8c5ef7d);
+            
+        
+
+        circle_marker_33db62828e859427d0d477ea814a9f51.bindPopup(popup_6108466c697ba1779a7a8c708208fed8)
+        ;
+
+        
+    
+    
+            circle_marker_33db62828e859427d0d477ea814a9f51.bindTooltip(
+                `<div>
+                     M'BOI MIRIM | Total: 11.519.710
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_282933a0ef9e21c863435049386bda2e = L.circleMarker(
+                [-23.551001980939386, -46.59838612056709],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.612127909469943, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_3ed1a1db5625f92e15da5a27ecc66fd2 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_8f673752d911442ab2d82ea61ccb1ab8 = $(`<div id="html_8f673752d911442ab2d82ea61ccb1ab8" style="width: 100.0%; height: 100.0%;"><b>MOOCA</b><br>Total retirado: 1.175.256</div>`)[0];
+                popup_3ed1a1db5625f92e15da5a27ecc66fd2.setContent(html_8f673752d911442ab2d82ea61ccb1ab8);
+            
+        
+
+        circle_marker_282933a0ef9e21c863435049386bda2e.bindPopup(popup_3ed1a1db5625f92e15da5a27ecc66fd2)
+        ;
+
+        
+    
+    
+            circle_marker_282933a0ef9e21c863435049386bda2e.bindTooltip(
+                `<div>
+                     MOOCA | Total: 1.175.256
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9259f7512b5822a145a9dadf850f306e = L.circleMarker(
+                [-23.81526645666646, -46.735606009797074],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.633988008378684, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_9b0fdf81191ba6643d631f834beacfd5 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_ac65044fcc3561b2cffe40e2dc269755 = $(`<div id="html_ac65044fcc3561b2cffe40e2dc269755" style="width: 100.0%; height: 100.0%;"><b>PARELHEIROS</b><br>Total retirado: 3.137.178</div>`)[0];
+                popup_9b0fdf81191ba6643d631f834beacfd5.setContent(html_ac65044fcc3561b2cffe40e2dc269755);
+            
+        
+
+        circle_marker_9259f7512b5822a145a9dadf850f306e.bindPopup(popup_9b0fdf81191ba6643d631f834beacfd5)
+        ;
+
+        
+    
+    
+            circle_marker_9259f7512b5822a145a9dadf850f306e.bindTooltip(
+                `<div>
+                     PARELHEIROS | Total: 3.137.178
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_edf82abceab6401ed97f38a051c6ee2e = L.circleMarker(
+                [-23.518511626890536, -46.52101281687136],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.153460981222618, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_264458f12a5ec0b56e61a53da12a03a2 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_7bfe00aaf79b68fc75cf84f0f427f7ff = $(`<div id="html_7bfe00aaf79b68fc75cf84f0f427f7ff" style="width: 100.0%; height: 100.0%;"><b>PENHA</b><br>Total retirado: 4.134.541</div>`)[0];
+                popup_264458f12a5ec0b56e61a53da12a03a2.setContent(html_7bfe00aaf79b68fc75cf84f0f427f7ff);
+            
+        
+
+        circle_marker_edf82abceab6401ed97f38a051c6ee2e.bindPopup(popup_264458f12a5ec0b56e61a53da12a03a2)
+        ;
+
+        
+    
+    
+            circle_marker_edf82abceab6401ed97f38a051c6ee2e.bindTooltip(
+                `<div>
+                     PENHA | Total: 4.134.541
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7196d58f8e51e8bfb1e779fbc9121512 = L.circleMarker(
+                [-23.407068285415424, -46.75309421687395],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.691859430489136, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_d5a6aa251512fe423f40128d9d24561b = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_f16bc5e844855e09e43b991860cc8e69 = $(`<div id="html_f16bc5e844855e09e43b991860cc8e69" style="width: 100.0%; height: 100.0%;"><b>PERUS/ANHANGUERA</b><br>Total retirado: 5.168.240</div>`)[0];
+                popup_d5a6aa251512fe423f40128d9d24561b.setContent(html_f16bc5e844855e09e43b991860cc8e69);
+            
+        
+
+        circle_marker_7196d58f8e51e8bfb1e779fbc9121512.bindPopup(popup_d5a6aa251512fe423f40128d9d24561b)
+        ;
+
+        
+    
+    
+            circle_marker_7196d58f8e51e8bfb1e779fbc9121512.bindTooltip(
+                `<div>
+                     PERUS/ANHANGUERA | Total: 5.168.240
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a078cc9ff157aca1b168d6517888ae6c = L.circleMarker(
+                [-23.56312289083323, -46.70320171317356],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.8921672507380825, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_14ce82f63d8f4811f350c29982102774 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_b1ab0b2373a51a9746d86be6e06b6742 = $(`<div id="html_b1ab0b2373a51a9746d86be6e06b6742" style="width: 100.0%; height: 100.0%;"><b>PINHEIROS</b><br>Total retirado: 1.712.918</div>`)[0];
+                popup_14ce82f63d8f4811f350c29982102774.setContent(html_b1ab0b2373a51a9746d86be6e06b6742);
+            
+        
+
+        circle_marker_a078cc9ff157aca1b168d6517888ae6c.bindPopup(popup_14ce82f63d8f4811f350c29982102774)
+        ;
+
+        
+    
+    
+            circle_marker_a078cc9ff157aca1b168d6517888ae6c.bindTooltip(
+                `<div>
+                     PINHEIROS | Total: 1.712.918
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9812a09044862fca4870a2207a07fa61 = L.circleMarker(
+                [-23.48849965931681, -46.72733521687191],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.657085291209588, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_05405b51099ed652fa828b4a0b93b736 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_2213f9b2383a4d5fd280be3cd5554b89 = $(`<div id="html_2213f9b2383a4d5fd280be3cd5554b89" style="width: 100.0%; height: 100.0%;"><b>PIRITUBA/JAGUARÁ</b><br>Total retirado: 7.021.427</div>`)[0];
+                popup_05405b51099ed652fa828b4a0b93b736.setContent(html_2213f9b2383a4d5fd280be3cd5554b89);
+            
+        
+
+        circle_marker_9812a09044862fca4870a2207a07fa61.bindPopup(popup_05405b51099ed652fa828b4a0b93b736)
+        ;
+
+        
+    
+    
+            circle_marker_9812a09044862fca4870a2207a07fa61.bindTooltip(
+                `<div>
+                     PIRITUBA/JAGUARÁ | Total: 7.021.427
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_96e3225a9ae16a35ad23ff38220b2522 = L.circleMarker(
+                [-23.481274592421936, -46.60366369228914],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.6819048396183582, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_7cd11c78ff794d2f01d3fc287f539196 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_b9f0a82b63e2496834ec81197de37240 = $(`<div id="html_b9f0a82b63e2496834ec81197de37240" style="width: 100.0%; height: 100.0%;"><b>SANTANA/TUCURUVI</b><br>Total retirado: 3.229.176</div>`)[0];
+                popup_7cd11c78ff794d2f01d3fc287f539196.setContent(html_b9f0a82b63e2496834ec81197de37240);
+            
+        
+
+        circle_marker_96e3225a9ae16a35ad23ff38220b2522.bindPopup(popup_7cd11c78ff794d2f01d3fc287f539196)
+        ;
+
+        
+    
+    
+            circle_marker_96e3225a9ae16a35ad23ff38220b2522.bindTooltip(
+                `<div>
+                     SANTANA/TUCURUVI | Total: 3.229.176
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b6bb6ed7894da2daa1f0e2f9b58025fb = L.circleMarker(
+                [-23.651223287435396, -46.707038761045496],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.689061617002511, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_4c9b641ff9a083dcc5c3c7ede942e8fe = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_b9a2088e5ad907303a085fde98c4c441 = $(`<div id="html_b9a2088e5ad907303a085fde98c4c441" style="width: 100.0%; height: 100.0%;"><b>SANTO AMARO</b><br>Total retirado: 1.322.965</div>`)[0];
+                popup_4c9b641ff9a083dcc5c3c7ede942e8fe.setContent(html_b9a2088e5ad907303a085fde98c4c441);
+            
+        
+
+        circle_marker_b6bb6ed7894da2daa1f0e2f9b58025fb.bindPopup(popup_4c9b641ff9a083dcc5c3c7ede942e8fe)
+        ;
+
+        
+    
+    
+            circle_marker_b6bb6ed7894da2daa1f0e2f9b58025fb.bindTooltip(
+                `<div>
+                     SANTO AMARO | Total: 1.322.965
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8f56beee3f0f6e1aad90d76e40b0fa4c = L.circleMarker(
+                [-23.600357569614758, -46.512645359198444],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.852783620420999, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_33a3c7f6f9b2fce0cd0d43210fe5e783 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_04eaa6dbf32d9afd0ca00baf65050f9a = $(`<div id="html_04eaa6dbf32d9afd0ca00baf65050f9a" style="width: 100.0%; height: 100.0%;"><b>SAPOPEMBA</b><br>Total retirado: 9.317.110</div>`)[0];
+                popup_33a3c7f6f9b2fce0cd0d43210fe5e783.setContent(html_04eaa6dbf32d9afd0ca00baf65050f9a);
+            
+        
+
+        circle_marker_8f56beee3f0f6e1aad90d76e40b0fa4c.bindPopup(popup_33a3c7f6f9b2fce0cd0d43210fe5e783)
+        ;
+
+        
+    
+    
+            circle_marker_8f56beee3f0f6e1aad90d76e40b0fa4c.bindTooltip(
+                `<div>
+                     SAPOPEMBA | Total: 9.317.110
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5edd332f966ba539944408ca044515d2 = L.circleMarker(
+                [-23.59953750034677, -46.46874487269204],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.138567550745636, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_393459048687dbbb99d7f1f81042debf = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_a8e01c2a40ac8ba42b1820fab392862d = $(`<div id="html_a8e01c2a40ac8ba42b1820fab392862d" style="width: 100.0%; height: 100.0%;"><b>SÃO MATEUS</b><br>Total retirado: 6.025.898</div>`)[0];
+                popup_393459048687dbbb99d7f1f81042debf.setContent(html_a8e01c2a40ac8ba42b1820fab392862d);
+            
+        
+
+        circle_marker_5edd332f966ba539944408ca044515d2.bindPopup(popup_393459048687dbbb99d7f1f81042debf)
+        ;
+
+        
+    
+    
+            circle_marker_5edd332f966ba539944408ca044515d2.bindTooltip(
+                `<div>
+                     SÃO MATEUS | Total: 6.025.898
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_105c3eb193c7d8cf79aa005339386af4 = L.circleMarker(
+                [-23.500360216626017, -46.45127800337821],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.3073516607622935, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_11d724b75996f30fe1d69254ab614c1f = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_ccc48ad7906ed1bb8738372a4bbdb318 = $(`<div id="html_ccc48ad7906ed1bb8738372a4bbdb318" style="width: 100.0%; height: 100.0%;"><b>SÃO MIGUEL PAULISTA</b><br>Total retirado: 2.510.052</div>`)[0];
+                popup_11d724b75996f30fe1d69254ab614c1f.setContent(html_ccc48ad7906ed1bb8738372a4bbdb318);
+            
+        
+
+        circle_marker_105c3eb193c7d8cf79aa005339386af4.bindPopup(popup_11d724b75996f30fe1d69254ab614c1f)
+        ;
+
+        
+    
+    
+            circle_marker_105c3eb193c7d8cf79aa005339386af4.bindTooltip(
+                `<div>
+                     SÃO MIGUEL PAULISTA | Total: 2.510.052
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f3fc916e14acd2d96cbb1720e330919b = L.circleMarker(
+                [-23.5479893124978, -46.634684288035125],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.775081837997658, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_443b82d6bff121ad38268aa2bff2d029 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_b809372cbff079a5264dd6579eef6f1c = $(`<div id="html_b809372cbff079a5264dd6579eef6f1c" style="width: 100.0%; height: 100.0%;"><b>SÉ</b><br>Total retirado: 5.328.023</div>`)[0];
+                popup_443b82d6bff121ad38268aa2bff2d029.setContent(html_b809372cbff079a5264dd6579eef6f1c);
+            
+        
+
+        circle_marker_f3fc916e14acd2d96cbb1720e330919b.bindPopup(popup_443b82d6bff121ad38268aa2bff2d029)
+        ;
+
+        
+    
+    
+            circle_marker_f3fc916e14acd2d96cbb1720e330919b.bindTooltip(
+                `<div>
+                     SÉ | Total: 5.328.023
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a78dd46ebfec663989571420479a3094 = L.circleMarker(
+                [-23.52155166879476, -46.60413813221306],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.802624024389503, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_223b37cda4db5dfaaeb25caffba1f668 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_9d53a3bc0665cfa8687e6feb1e8003d6 = $(`<div id="html_9d53a3bc0665cfa8687e6feb1e8003d6" style="width: 100.0%; height: 100.0%;"><b>VILA GUILHERME/VILA MARIA</b><br>Total retirado: 3.460.951</div>`)[0];
+                popup_223b37cda4db5dfaaeb25caffba1f668.setContent(html_9d53a3bc0665cfa8687e6feb1e8003d6);
+            
+        
+
+        circle_marker_a78dd46ebfec663989571420479a3094.bindPopup(popup_223b37cda4db5dfaaeb25caffba1f668)
+        ;
+
+        
+    
+    
+            circle_marker_a78dd46ebfec663989571420479a3094.bindTooltip(
+                `<div>
+                     VILA GUILHERME/VILA MARIA | Total: 3.460.951
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_50a615f299e620222017749152f6f5fc = L.circleMarker(
+                [-23.598291372734437, -46.64944998618565],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.7915266964185728, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_9141f1f26dcabcbd2fbdaa9674f87bec = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_1cc1b6d502b95fad62ffd3f5661321d6 = $(`<div id="html_1cc1b6d502b95fad62ffd3f5661321d6" style="width: 100.0%; height: 100.0%;"><b>VILA MARIANA</b><br>Total retirado: 1.519.693</div>`)[0];
+                popup_9141f1f26dcabcbd2fbdaa9674f87bec.setContent(html_1cc1b6d502b95fad62ffd3f5661321d6);
+            
+        
+
+        circle_marker_50a615f299e620222017749152f6f5fc.bindPopup(popup_9141f1f26dcabcbd2fbdaa9674f87bec)
+        ;
+
+        
+    
+    
+            circle_marker_50a615f299e620222017749152f6f5fc.bindTooltip(
+                `<div>
+                     VILA MARIANA | Total: 1.519.693
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3fee30c5d63545ae67d1b9c378a1be65 = L.circleMarker(
+                [-23.58259946041313, -46.56132291871817],
+                {"bubblingMouseEvents": true, "color": "#1a73e8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1a73e8", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.53304536312112, "stroke": true, "weight": 1}
+            ).addTo(map_e00165fc89f80adc110338d12ed09a9c);
+        
+    
+        var popup_84e6ea7a6d72146eb85cdde92e14cb1a = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_851a38787fa10e865bd5102cc755e07c = $(`<div id="html_851a38787fa10e865bd5102cc755e07c" style="width: 100.0%; height: 100.0%;"><b>VILA PRUDENTE</b><br>Total retirado: 2.943.373</div>`)[0];
+                popup_84e6ea7a6d72146eb85cdde92e14cb1a.setContent(html_851a38787fa10e865bd5102cc755e07c);
+            
+        
+
+        circle_marker_3fee30c5d63545ae67d1b9c378a1be65.bindPopup(popup_84e6ea7a6d72146eb85cdde92e14cb1a)
+        ;
+
+        
+    
+    
+            circle_marker_3fee30c5d63545ae67d1b9c378a1be65.bindTooltip(
+                `<div>
+                     VILA PRUDENTE | Total: 2.943.373
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

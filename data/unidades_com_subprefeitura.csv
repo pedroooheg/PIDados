@@ -1,4 +1,4 @@
-id_unidade,nome,latitude,longitude,total_retirado,subprefeitura,dist_km
+﻿id_unidade,nome,latitude,longitude,total_retirado,subprefeitura,dist_km
 337,UBS SÉ,-23.551244,-46.628102,32208991.0,SÉ,0.7623390908173716
 73,UBS BURGO PAULISTA,-23.523251,-46.490492,27830554.0,ERMELINO MATARAZZO,2.0806791296407288
 410,UBS VILA PRUDENTE,-23.581974,-46.583095,17846303.0,IPIRANGA,2.118135722781246

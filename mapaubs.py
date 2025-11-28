@@ -197,7 +197,8 @@ if __name__ == "__main__":
     df_join = vincular_por_proximidade(df_unidades, df_sub)
 
     # salvar UBS com subprefeitura (NOVO)
-    df_join.to_csv(SAIDA_UBS_COM_SUB, index=False, encoding="utf-8")
+    df_join.to_csv(SAIDA_UBS_COM_SUB, index=False, encoding="utf-8-sig"
+)
     print(f"✔ Arquivo salvo: {SAIDA_UBS_COM_SUB}")
 
     # gerar mapa + csv agregado

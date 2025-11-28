@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_defd71b0800938b09f19136f3b58a4d1 {
+                #map_26bd7d3aada9f9d5940b7dbd00ca59f0 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -55,23 +55,14 @@
 <body>
     
     
-    <div style="position: fixed; bottom: 20px; left: 20px; z-index: 9999;
-                background: white; padding: 10px 12px; border-radius: 8px;
-                box-shadow: 0 2px 6px rgba(0,0,0,.2); font-size: 12px;">
-      <b>Mapa por Subprefeitura</b><br>
-      Cores e tamanhos proporcionais ao total de retiradas.<br>
-      Passe o mouse para ver detalhes.
-    </div>
-    
-    
-            <div class="folium-map" id="map_defd71b0800938b09f19136f3b58a4d1" ></div>
+            <div class="folium-map" id="map_26bd7d3aada9f9d5940b7dbd00ca59f0" ></div>
         
 </body>
 <script>
     
     
-            var map_defd71b0800938b09f19136f3b58a4d1 = L.map(
-                "map_defd71b0800938b09f19136f3b58a4d1",
+            var map_26bd7d3aada9f9d5940b7dbd00ca59f0 = L.map(
+                "map_26bd7d3aada9f9d5940b7dbd00ca59f0",
                 {
                     center: [-23.5504533, -46.6339112],
                     crs: L.CRS.EPSG3857,
@@ -88,7 +79,7 @@
 
         
     
-            var tile_layer_d4a2e4140f4cf0fe9c0c167ffdd1a4f6 = L.tileLayer(
+            var tile_layer_cc92744a54c322d7334d1365065d32b0 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -105,46 +96,46 @@
             );
         
     
-            tile_layer_d4a2e4140f4cf0fe9c0c167ffdd1a4f6.addTo(map_defd71b0800938b09f19136f3b58a4d1);
+            tile_layer_cc92744a54c322d7334d1365065d32b0.addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-    var color_map_c52a74c30505cd074036ad507dc14592 = {};
+    var color_map_6d2ed0a1eb50b15bd0975944635019ae = {};
 
     
-    color_map_c52a74c30505cd074036ad507dc14592.color = d3.scale.threshold()
+    color_map_6d2ed0a1eb50b15bd0975944635019ae.color = d3.scale.threshold()
               .domain([19747658.0, 20055978.134268537, 20364298.268537074, 20672618.40280561, 20980938.53707415, 21289258.671342686, 21597578.805611223, 21905898.93987976, 22214219.074148297, 22522539.208416834, 22830859.34268537, 23139179.47695391, 23447499.611222446, 23755819.745490983, 24064139.87975952, 24372460.014028057, 24680780.148296595, 24989100.28256513, 25297420.41683367, 25605740.551102206, 25914060.685370743, 26222380.81963928, 26530700.953907818, 26839021.088176355, 27147341.222444892, 27455661.35671343, 27763981.490981963, 28072301.6252505, 28380621.75951904, 28688941.893787578, 28997262.028056115, 29305582.162324652, 29613902.296593186, 29922222.430861723, 30230542.56513026, 30538862.699398797, 30847182.833667334, 31155502.96793587, 31463823.10220441, 31772143.236472946, 32080463.370741483, 32388783.50501002, 32697103.639278557, 33005423.773547094, 33313743.90781563, 33622064.04208417, 33930384.17635271, 34238704.31062125, 34547024.444889784, 34855344.57915832, 35163664.71342686, 35471984.847695395, 35780304.981963925, 36088625.11623246, 36396945.250501, 36705265.384769544, 37013585.51903808, 37321905.65330662, 37630225.787575155, 37938545.92184369, 38246866.05611223, 38555186.19038077, 38863506.324649304, 39171826.458917834, 39480146.59318637, 39788466.72745491, 40096786.861723445, 40405106.99599198, 40713427.13026052, 41021747.26452906, 41330067.398797594, 41638387.53306613, 41946707.66733467, 42255027.801603206, 42563347.93587174, 42871668.07014028, 43179988.20440882, 43488308.338677354, 43796628.47294589, 44104948.60721443, 44413268.741482966, 44721588.8757515, 45029909.01002004, 45338229.14428858, 45646549.278557114, 45954869.41282565, 46263189.54709419, 46571509.681362726, 46879829.81563126, 47188149.9498998, 47496470.08416834, 47804790.218436874, 48113110.35270541, 48421430.48697395, 48729750.621242486, 49038070.75551102, 49346390.88977956, 49654711.0240481, 49963031.158316635, 50271351.29258517, 50579671.42685371, 50887991.561122246, 51196311.69539078, 51504631.82965932, 51812951.96392785, 52121272.09819639, 52429592.232464924, 52737912.36673346, 53046232.501002, 53354552.63527054, 53662872.76953908, 53971192.90380762, 54279513.038076155, 54587833.17234469, 54896153.30661323, 55204473.44088177, 55512793.5751503, 55821113.70941884, 56129433.84368738, 56437753.977955915, 56746074.11222445, 57054394.24649299, 57362714.38076153, 57671034.51503006, 57979354.6492986, 58287674.78356713, 58595994.91783567, 58904315.052104205, 59212635.18637274, 59520955.32064128, 59829275.45490982, 60137595.58917835, 60445915.72344689, 60754235.85771543, 61062555.991983965, 61370876.1262525, 61679196.26052104, 61987516.39478958, 62295836.52905811, 62604156.66332665, 62912476.79759519, 63220796.931863725, 63529117.06613226, 63837437.2004008, 64145757.33466934, 64454077.468937874, 64762397.60320641, 65070717.73747495, 65379037.871743485, 65687358.00601202, 65995678.14028056, 66303998.2745491, 66612318.408817634, 66920638.54308617, 67228958.67735471, 67537278.81162325, 67845598.94589178, 68153919.08016032, 68462239.21442886, 68770559.3486974, 69078879.48296593, 69387199.61723447, 69695519.751503, 70003839.88577154, 70312160.02004008, 70620480.15430862, 70928800.28857715, 71237120.42284569, 71545440.55711423, 71853760.69138277, 72162080.8256513, 72470400.95991984, 72778721.09418838, 73087041.22845691, 73395361.36272545, 73703681.49699399, 74012001.63126253, 74320321.76553106, 74628641.8997996, 74936962.03406814, 75245282.16833667, 75553602.30260521, 75861922.43687375, 76170242.57114229, 76478562.70541082, 76786882.83967936, 77095202.9739479, 77403523.10821643, 77711843.24248497, 78020163.37675351, 78328483.51102205, 78636803.64529058, 78945123.77955912, 79253443.91382766, 79561764.0480962, 79870084.18236473, 80178404.31663327, 80486724.4509018, 80795044.58517034, 81103364.71943888, 81411684.85370742, 81720004.98797596, 82028325.12224449, 82336645.25651303, 82644965.39078157, 82953285.5250501, 83261605.65931864, 83569925.79358718, 83878245.9278557, 84186566.06212425, 84494886.19639277, 84803206.33066133, 85111526.46492985, 85419846.5991984, 85728166.73346692, 86036486.86773548, 86344807.002004, 86653127.13627255, 86961447.27054109, 87269767.40480962, 87578087.53907816, 87886407.6733467, 88194727.80761524, 88503047.94188377, 88811368.07615231, 89119688.21042085, 89428008.34468938, 89736328.47895792, 90044648.61322646, 90352968.747495, 90661288.88176353, 90969609.01603207, 91277929.1503006, 91586249.28456914, 91894569.41883768, 92202889.55310622, 92511209.68737476, 92819529.8216433, 93127849.95591183, 93436170.09018037, 93744490.2244489, 94052810.35871744, 94361130.49298598, 94669450.62725452, 94977770.76152305, 95286090.89579159, 95594411.03006013, 95902731.16432866, 96211051.2985972, 96519371.43286574, 96827691.56713426, 97136011.7014028, 97444331.83567134, 97752651.96993987, 98060972.10420841, 98369292.23847695, 98677612.37274548, 98985932.50701402, 99294252.64128256, 99602572.7755511, 99910892.90981963, 100219213.04408817, 100527533.1783567, 100835853.31262524, 101144173.44689378, 101452493.58116232, 101760813.71543086, 102069133.8496994, 102377453.98396793, 102685774.11823647, 102994094.252505, 103302414.38677354, 103610734.52104208, 103919054.65531062, 104227374.78957915, 104535694.92384769, 104844015.05811623, 105152335.19238476, 105460655.3266533, 105768975.46092184, 106077295.59519038, 106385615.72945891, 106693935.86372745, 107002255.99799599, 107310576.13226452, 107618896.26653306, 107927216.4008016, 108235536.53507014, 108543856.66933867, 108852176.80360721, 109160496.93787575, 109468817.07214428, 109777137.20641282, 110085457.34068136, 110393777.4749499, 110702097.60921843, 111010417.74348697, 111318737.87775551, 111627058.01202404, 111935378.14629258, 112243698.28056112, 112552018.41482966, 112860338.5490982, 113168658.68336673, 113476978.81763527, 113785298.9519038, 114093619.08617234, 114401939.22044088, 114710259.35470942, 115018579.48897795, 115326899.62324649, 115635219.75751503, 115943539.89178357, 116251860.0260521, 116560180.16032064, 116868500.29458918, 117176820.42885771, 117485140.56312625, 117793460.69739479, 118101780.83166333, 118410100.96593186, 118718421.1002004, 119026741.23446894, 119335061.36873747, 119643381.50300601, 119951701.63727455, 120260021.77154309, 120568341.90581162, 120876662.04008016, 121184982.1743487, 121493302.30861723, 121801622.44288577, 122109942.57715431, 122418262.71142285, 122726582.84569138, 123034902.97995992, 123343223.11422846, 123651543.248497, 123959863.38276553, 124268183.51703407, 124576503.6513026, 124884823.78557114, 125193143.91983968, 125501464.05410822, 125809784.18837675, 126118104.32264529, 126426424.45691383, 126734744.59118237, 127043064.7254509, 127351384.85971944, 127659704.99398798, 127968025.12825651, 128276345.26252505, 128584665.39679359, 128892985.53106213, 129201305.66533066, 129509625.7995992, 129817945.93386774, 130126266.06813627, 130434586.20240481, 130742906.33667335, 131051226.47094189, 131359546.60521042, 131667866.73947896, 131976186.8737475, 132284507.00801603, 132592827.14228457, 132901147.27655311, 133209467.41082165, 133517787.54509018, 133826107.67935872, 134134427.81362726, 134442747.9478958, 134751068.08216435, 135059388.21643287, 135367708.3507014, 135676028.48496994, 135984348.6192385, 136292668.75350702, 136600988.88777554, 136909309.0220441, 137217629.15631264, 137525949.29058117, 137834269.4248497, 138142589.55911824, 138450909.6933868, 138759229.82765532, 139067549.96192384, 139375870.0961924, 139684190.23046094, 139992510.36472946, 140300830.498998, 140609150.63326654, 140917470.7675351, 141225790.9018036, 141534111.03607213, 141842431.1703407, 142150751.30460924, 142459071.43887776, 142767391.57314628, 143075711.70741484, 143384031.8416834, 143692351.9759519, 144000672.11022043, 144308992.24448898, 144617312.37875754, 144925632.51302606, 145233952.64729458, 145542272.78156313, 145850592.91583169, 146158913.0501002, 146467233.18436873, 146775553.31863728, 147083873.45290583, 147392193.58717436, 147700513.72144288, 148008833.8557114, 148317153.98997995, 148625474.1242485, 148933794.25851703, 149242114.39278555, 149550434.5270541, 149858754.66132265, 150167074.79559118, 150475394.9298597, 150783715.06412825, 151092035.1983968, 151400355.33266532, 151708675.46693385, 152016995.6012024, 152325315.73547095, 152633635.86973947, 152941956.004008, 153250276.13827655, 153558596.2725451, 153866916.40681362, 154175236.54108217, 154483556.6753507, 154791876.80961925, 155100196.94388777, 155408517.07815632, 155716837.21242484, 156025157.3466934, 156333477.48096192, 156641797.61523047, 156950117.749499, 157258437.88376755, 157566758.01803607, 157875078.15230462, 158183398.28657314, 158491718.4208417, 158800038.55511022, 159108358.68937877, 159416678.8236473, 159724998.95791584, 160033319.09218436, 160341639.22645292, 160649959.36072144, 160958279.49499, 161266599.6292585, 161574919.76352707, 161883239.8977956, 162191560.03206414, 162499880.16633266, 162808200.3006012, 163116520.43486974, 163424840.5691383, 163733160.7034068, 164041480.83767536, 164349800.97194389, 164658121.10621244, 164966441.24048096, 165274761.3747495, 165583081.50901803, 165891401.6432866, 166199721.7775551, 166508041.91182366, 166816362.04609218, 167124682.18036073, 167433002.31462926, 167741322.4488978, 168049642.58316633, 168357962.71743488, 168666282.8517034, 168974602.98597196, 169282923.12024048, 169591243.25450903, 169899563.38877755, 170207883.5230461, 170516203.65731463, 170824523.79158318, 171132843.9258517, 171441164.06012025, 171749484.19438878, 172057804.32865733, 172366124.46292585, 172674444.5971944, 172982764.73146293, 173291084.86573148, 173599405.0])
               .range(['#ffffccff', '#ffffccff', '#ffffcbff', '#ffffcaff', '#fffec9ff', '#fffec9ff', '#fffec8ff', '#fffdc7ff', '#fffdc7ff', '#fffdc6ff', '#fffdc5ff', '#fffcc5ff', '#fffcc4ff', '#fffcc3ff', '#fffbc2ff', '#fffbc2ff', '#fffbc1ff', '#fffbc0ff', '#fffac0ff', '#fffabfff', '#fffabeff', '#fff9bdff', '#fff9bdff', '#fff9bcff', '#fff9bbff', '#fff8bbff', '#fff8baff', '#fff8b9ff', '#fff7b8ff', '#fff7b8ff', '#fff7b7ff', '#fff7b6ff', '#fff6b6ff', '#fff6b5ff', '#fff6b4ff', '#fff5b4ff', '#fff5b3ff', '#fff5b2ff', '#fff4b1ff', '#fff4b1ff', '#fff4b0ff', '#fff4afff', '#fff3afff', '#fff3aeff', '#fff3adff', '#fff2acff', '#fff2acff', '#fff2abff', '#fff2aaff', '#fff1aaff', '#fff1a9ff', '#fff1a8ff', '#fff0a7ff', '#fff0a7ff', '#fff0a6ff', '#fff0a5ff', '#ffefa5ff', '#ffefa4ff', '#ffefa3ff', '#ffeea3ff', '#ffeea2ff', '#ffeea1ff', '#ffeea0ff', '#ffeda0ff', '#ffed9fff', '#ffed9eff', '#ffec9eff', '#ffec9dff', '#ffec9cff', '#ffeb9cff', '#ffeb9bff', '#ffeb9aff', '#ffea9aff', '#ffea99ff', '#ffea98ff', '#ffe998ff', '#ffe997ff', '#ffe996ff', '#ffe896ff', '#ffe895ff', '#ffe894ff', '#ffe794ff', '#ffe793ff', '#ffe792ff', '#ffe692ff', '#ffe691ff', '#ffe690ff', '#ffe68fff', '#ffe58fff', '#ffe58eff', '#ffe58dff', '#ffe48dff', '#ffe48cff', '#ffe48bff', '#ffe38bff', '#ffe38aff', '#ffe389ff', '#ffe289ff', '#ffe288ff', '#ffe287ff', '#ffe187ff', '#ffe186ff', '#ffe185ff', '#ffe085ff', '#ffe084ff', '#ffe083ff', '#ffdf83ff', '#ffdf82ff', '#ffdf81ff', '#ffde81ff', '#ffde80ff', '#ffde7fff', '#ffdd7fff', '#ffdd7eff', '#ffdd7dff', '#ffdc7dff', '#ffdc7cff', '#ffdc7bff', '#ffdc7bff', '#ffdb7aff', '#ffdb79ff', '#ffdb78ff', '#ffda78ff', '#ffda77ff', '#ffda76ff', '#fed976ff', '#fed975ff', '#fed874ff', '#fed774ff', '#fed773ff', '#fed672ff', '#fed572ff', '#fed571ff', '#fed470ff', '#fed470ff', '#fed36fff', '#fed26eff', '#fed26eff', '#fed16dff', '#fed06cff', '#fed06cff', '#fecf6bff', '#fecf6aff', '#fece6aff', '#fecd69ff', '#fecd68ff', '#fecc68ff', '#fecb67ff', '#fecb66ff', '#feca66ff', '#feca65ff', '#fec964ff', '#fec864ff', '#fec863ff', '#fec762ff', '#fec662ff', '#fec661ff', '#fec560ff', '#fec45fff', '#fec45fff', '#fec35eff', '#fec35dff', '#fec25dff', '#fec15cff', '#fec15bff', '#fec05bff', '#febf5aff', '#febf59ff', '#febe59ff', '#febe58ff', '#febd57ff', '#febc57ff', '#febc56ff', '#febb55ff', '#feba55ff', '#feba54ff', '#feb953ff', '#feb953ff', '#feb852ff', '#feb751ff', '#feb751ff', '#feb650ff', '#feb54fff', '#feb54fff', '#feb44eff', '#feb44dff', '#feb34dff', '#feb24cff', '#feb24cff', '#feb14bff', '#feb04bff', '#feb04bff', '#feaf4bff', '#feaf4aff', '#feae4aff', '#feae4aff', '#fead4aff', '#feac49ff', '#feac49ff', '#feab49ff', '#feab48ff', '#feaa48ff', '#fea948ff', '#fea948ff', '#fea847ff', '#fea847ff', '#fea747ff', '#fea647ff', '#fea646ff', '#fea546ff', '#fea546ff', '#fea446ff', '#fea345ff', '#fea345ff', '#fea245ff', '#fea245ff', '#fea144ff', '#fea044ff', '#fea044ff', '#fe9f44ff', '#fe9f43ff', '#fe9e43ff', '#fe9d43ff', '#fe9d43ff', '#fe9c42ff', '#fe9c42ff', '#fe9b42ff', '#fe9a42ff', '#fe9a41ff', '#fe9941ff', '#fe9941ff', '#fe9840ff', '#fe9740ff', '#fe9740ff', '#fe9640ff', '#fe963fff', '#fe953fff', '#fe943fff', '#fe943fff', '#fe933eff', '#fe933eff', '#fe923eff', '#fe923eff', '#fe913dff', '#fe903dff', '#fe903dff', '#fe8f3dff', '#fe8f3cff', '#fe8e3cff', '#fe8d3cff', '#fd8d3cff', '#fd8c3bff', '#fd8b3bff', '#fd8a3bff', '#fd883aff', '#fd873aff', '#fd863aff', '#fd853aff', '#fd8439ff', '#fd8339ff', '#fd8239ff', '#fd8138ff', '#fd8038ff', '#fd7f38ff', '#fd7e38ff', '#fd7d37ff', '#fd7c37ff', '#fd7b37ff', '#fd7a36ff', '#fd7936ff', '#fd7836ff', '#fd7736ff', '#fd7635ff', '#fd7535ff', '#fd7435ff', '#fd7334ff', '#fd7234ff', '#fd7134ff', '#fd7033ff', '#fd6f33ff', '#fd6e33ff', '#fd6d33ff', '#fd6c32ff', '#fd6b32ff', '#fd6a32ff', '#fd6931ff', '#fd6831ff', '#fd6731ff', '#fd6631ff', '#fd6530ff', '#fd6430ff', '#fd6330ff', '#fd622fff', '#fd612fff', '#fd602fff', '#fd5f2fff', '#fd5e2eff', '#fd5d2eff', '#fd5c2eff', '#fd5b2dff', '#fd5a2dff', '#fd592dff', '#fd582dff', '#fd572cff', '#fd562cff', '#fd552cff', '#fd542bff', '#fd532bff', '#fd522bff', '#fd512aff', '#fd502aff', '#fd4f2aff', '#fc4e2aff', '#fc4d29ff', '#fc4c29ff', '#fb4b29ff', '#fb4a29ff', '#fa4a29ff', '#fa4928ff', '#fa4828ff', '#f94728ff', '#f94628ff', '#f84527ff', '#f84427ff', '#f84427ff', '#f74327ff', '#f74226ff', '#f64126ff', '#f64026ff', '#f63f26ff', '#f53f26ff', '#f53e25ff', '#f43d25ff', '#f43c25ff', '#f43b25ff', '#f33a24ff', '#f33a24ff', '#f23924ff', '#f23824ff', '#f23724ff', '#f13623ff', '#f13523ff', '#f03523ff', '#f03423ff', '#f03322ff', '#ef3222ff', '#ef3122ff', '#ee3022ff', '#ee3022ff', '#ee2f21ff', '#ed2e21ff', '#ed2d21ff', '#ec2c21ff', '#ec2b20ff', '#ec2b20ff', '#eb2a20ff', '#eb2920ff', '#ea281fff', '#ea271fff', '#ea261fff', '#e9261fff', '#e9251fff', '#e8241eff', '#e8231eff', '#e8221eff', '#e7211eff', '#e7211dff', '#e6201dff', '#e61f1dff', '#e61e1dff', '#e51d1dff', '#e51c1cff', '#e41b1cff', '#e41b1cff', '#e31a1cff', '#e3191cff', '#e2191cff', '#e2181cff', '#e1181cff', '#e0181cff', '#e0171dff', '#df171dff', '#df161dff', '#de161dff', '#dd161dff', '#dd151dff', '#dc151eff', '#dc141eff', '#db141eff', '#da131eff', '#da131eff', '#d9131eff', '#d9121eff', '#d8121fff', '#d7111fff', '#d7111fff', '#d6111fff', '#d5101fff', '#d5101fff', '#d40f20ff', '#d40f20ff', '#d30e20ff', '#d20e20ff', '#d20e20ff', '#d10d20ff', '#d10d21ff', '#d00c21ff', '#cf0c21ff', '#cf0b21ff', '#ce0b21ff', '#ce0b21ff', '#cd0a22ff', '#cc0a22ff', '#cc0922ff', '#cb0922ff', '#ca0922ff', '#ca0822ff', '#c90822ff', '#c90723ff', '#c80723ff', '#c70623ff', '#c70623ff', '#c60623ff', '#c60523ff', '#c50524ff', '#c40424ff', '#c40424ff', '#c30424ff', '#c30324ff', '#c20324ff', '#c10225ff', '#c10225ff', '#c00125ff', '#bf0125ff', '#bf0125ff', '#be0025ff', '#be0026ff', '#bd0026ff', '#bc0026ff', '#bb0026ff', '#ba0026ff', '#b90026ff', '#b80026ff', '#b70026ff', '#b60026ff', '#b50026ff', '#b40026ff', '#b30026ff', '#b20026ff', '#b10026ff', '#b00026ff', '#af0026ff', '#ae0026ff', '#ad0026ff', '#ac0026ff', '#ab0026ff', '#aa0026ff', '#a90026ff', '#a80026ff', '#a70026ff', '#a60026ff', '#a50026ff', '#a40026ff', '#a30026ff', '#a20026ff', '#a10026ff', '#a00026ff', '#9f0026ff', '#9e0026ff', '#9d0026ff', '#9c0026ff', '#9b0026ff', '#9b0026ff', '#9a0026ff', '#990026ff', '#980026ff', '#970026ff', '#960026ff', '#950026ff', '#940026ff', '#930026ff', '#920026ff', '#910026ff', '#900026ff', '#8f0026ff', '#8e0026ff', '#8d0026ff', '#8c0026ff', '#8b0026ff', '#8a0026ff', '#890026ff', '#880026ff', '#870026ff', '#860026ff', '#850026ff', '#840026ff', '#830026ff', '#820026ff', '#810026ff', '#800026ff']);
     
 
-    color_map_c52a74c30505cd074036ad507dc14592.x = d3.scale.linear()
+    color_map_6d2ed0a1eb50b15bd0975944635019ae.x = d3.scale.linear()
               .domain([19747658.0, 173599405.0])
               .range([0, 450 - 50]);
 
-    color_map_c52a74c30505cd074036ad507dc14592.legend = L.control({position: 'topright'});
-    color_map_c52a74c30505cd074036ad507dc14592.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
-    color_map_c52a74c30505cd074036ad507dc14592.legend.addTo(map_defd71b0800938b09f19136f3b58a4d1);
+    color_map_6d2ed0a1eb50b15bd0975944635019ae.legend = L.control({position: 'topright'});
+    color_map_6d2ed0a1eb50b15bd0975944635019ae.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_6d2ed0a1eb50b15bd0975944635019ae.legend.addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
 
-    color_map_c52a74c30505cd074036ad507dc14592.xAxis = d3.svg.axis()
-        .scale(color_map_c52a74c30505cd074036ad507dc14592.x)
+    color_map_6d2ed0a1eb50b15bd0975944635019ae.xAxis = d3.svg.axis()
+        .scale(color_map_6d2ed0a1eb50b15bd0975944635019ae.x)
         .orient("top")
         .tickSize(1)
         .tickValues([19747658.0, 38979126.375, 58210594.75, 77442063.125, 96673531.5, 115904999.875, 135136468.25, 154367936.625, 173599405.0]);
 
-    color_map_c52a74c30505cd074036ad507dc14592.svg = d3.select(".legend.leaflet-control").append("svg")
+    color_map_6d2ed0a1eb50b15bd0975944635019ae.svg = d3.select(".legend.leaflet-control").append("svg")
         .attr("id", 'legend')
         .attr("width", 450)
         .attr("height", 40);
 
-    color_map_c52a74c30505cd074036ad507dc14592.g = color_map_c52a74c30505cd074036ad507dc14592.svg.append("g")
+    color_map_6d2ed0a1eb50b15bd0975944635019ae.g = color_map_6d2ed0a1eb50b15bd0975944635019ae.svg.append("g")
         .attr("class", "key")
         .attr("fill", "black")
         .attr("transform", "translate(25,16)");
 
-    color_map_c52a74c30505cd074036ad507dc14592.g.selectAll("rect")
-        .data(color_map_c52a74c30505cd074036ad507dc14592.color.range().map(function(d, i) {
+    color_map_6d2ed0a1eb50b15bd0975944635019ae.g.selectAll("rect")
+        .data(color_map_6d2ed0a1eb50b15bd0975944635019ae.color.range().map(function(d, i) {
           return {
-            x0: i ? color_map_c52a74c30505cd074036ad507dc14592.x(color_map_c52a74c30505cd074036ad507dc14592.color.domain()[i - 1]) : color_map_c52a74c30505cd074036ad507dc14592.x.range()[0],
-            x1: i < color_map_c52a74c30505cd074036ad507dc14592.color.domain().length ? color_map_c52a74c30505cd074036ad507dc14592.x(color_map_c52a74c30505cd074036ad507dc14592.color.domain()[i]) : color_map_c52a74c30505cd074036ad507dc14592.x.range()[1],
+            x0: i ? color_map_6d2ed0a1eb50b15bd0975944635019ae.x(color_map_6d2ed0a1eb50b15bd0975944635019ae.color.domain()[i - 1]) : color_map_6d2ed0a1eb50b15bd0975944635019ae.x.range()[0],
+            x1: i < color_map_6d2ed0a1eb50b15bd0975944635019ae.color.domain().length ? color_map_6d2ed0a1eb50b15bd0975944635019ae.x(color_map_6d2ed0a1eb50b15bd0975944635019ae.color.domain()[i]) : color_map_6d2ed0a1eb50b15bd0975944635019ae.x.range()[1],
             z: d
           };
         }))
@@ -154,38 +145,21 @@
         .attr("width", function(d) { return d.x1 - d.x0; })
         .style("fill", function(d) { return d.z; });
 
-    color_map_c52a74c30505cd074036ad507dc14592.g.call(color_map_c52a74c30505cd074036ad507dc14592.xAxis).append("text")
+    color_map_6d2ed0a1eb50b15bd0975944635019ae.g.call(color_map_6d2ed0a1eb50b15bd0975944635019ae.xAxis).append("text")
         .attr("class", "caption")
         .attr("y", 21)
         .attr("fill", "black")
-        .text("Total retirado por subprefeitura");
+        .text("Total de medicamentos retirados");
     
-            var circle_marker_ca3ffcf03f57f1d20491ec3a0ad9d674 = L.circleMarker(
+            var circle_marker_b407d66a8876d8ba07baceb03f5284e8 = L.circleMarker(
                 [-23.550430052216736, -46.548130291731596],
-                {"bubblingMouseEvents": true, "color": "#fed571ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fed571ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.619592853892, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#fed571ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fed571ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.619592853892, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_e35733d390c7c956d9bb486beae22e43 = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_7833aaf27b35d25d525b59a48a98f120 = $(`<div id="html_7833aaf27b35d25d525b59a48a98f120" style="width: 100.0%; height: 100.0%;"><b>ARICANDUVA/CARRAO/FORMOSA</b><br>Total retirado: 60.485.095<br>Nº de unidades: 10</div>`)[0];
-                popup_e35733d390c7c956d9bb486beae22e43.setContent(html_7833aaf27b35d25d525b59a48a98f120);
-            
-        
-
-        circle_marker_ca3ffcf03f57f1d20491ec3a0ad9d674.bindPopup(popup_e35733d390c7c956d9bb486beae22e43)
-        ;
-
-        
-    
-    
-            circle_marker_ca3ffcf03f57f1d20491ec3a0ad9d674.bindTooltip(
+            circle_marker_b407d66a8876d8ba07baceb03f5284e8.bindTooltip(
                 `<div>
-                     ARICANDUVA/CARRAO/FORMOSA | Total: 60.485.095 | Unidades: 10
+                     ARICANDUVA/CARRAO/FORMOSA — Total: 60.485.095
                  </div>`,
                 {
   "sticky": true,
@@ -193,32 +167,15 @@
             );
         
     
-            var circle_marker_2dead8442a95baa8b4d1de7f4c12d78e = L.circleMarker(
+            var circle_marker_1d6321a552a0186a29561a919973feb0 = L.circleMarker(
                 [-23.588296096015526, -46.738057832211524],
-                {"bubblingMouseEvents": true, "color": "#fe913eff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fe913eff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.15630200156258, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#fe913eff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fe913eff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.15630200156258, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_845d0f622edf0cc247a9519df0f1a32e = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_e6a711186e00ee3b2e1c169187c16982 = $(`<div id="html_e6a711186e00ee3b2e1c169187c16982" style="width: 100.0%; height: 100.0%;"><b>BUTANTA</b><br>Total retirado: 94.558.390<br>Nº de unidades: 16</div>`)[0];
-                popup_845d0f622edf0cc247a9519df0f1a32e.setContent(html_e6a711186e00ee3b2e1c169187c16982);
-            
-        
-
-        circle_marker_2dead8442a95baa8b4d1de7f4c12d78e.bindPopup(popup_845d0f622edf0cc247a9519df0f1a32e)
-        ;
-
-        
-    
-    
-            circle_marker_2dead8442a95baa8b4d1de7f4c12d78e.bindTooltip(
+            circle_marker_1d6321a552a0186a29561a919973feb0.bindTooltip(
                 `<div>
-                     BUTANTA | Total: 94.558.390 | Unidades: 16
+                     BUTANTA — Total: 94.558.390
                  </div>`,
                 {
   "sticky": true,
@@ -226,32 +183,15 @@
             );
         
     
-            var circle_marker_50bf37b615f8036ef491b573de706d96 = L.circleMarker(
+            var circle_marker_e290218c0784380cf6354be86382ce78 = L.circleMarker(
                 [-23.642683208940728, -46.73572483036189],
-                {"bubblingMouseEvents": true, "color": "#f33b25ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f33b25ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.7647951699892, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#f33b25ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f33b25ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.7647951699892, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_c61ec8f07a6507f23d635afb88486e36 = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_40044dc3d8834e773b3f0546d408c3c5 = $(`<div id="html_40044dc3d8834e773b3f0546d408c3c5" style="width: 100.0%; height: 100.0%;"><b>CAMPO LIMPO</b><br>Total retirado: 122.919.379<br>Nº de unidades: 22</div>`)[0];
-                popup_c61ec8f07a6507f23d635afb88486e36.setContent(html_40044dc3d8834e773b3f0546d408c3c5);
-            
-        
-
-        circle_marker_50bf37b615f8036ef491b573de706d96.bindPopup(popup_c61ec8f07a6507f23d635afb88486e36)
-        ;
-
-        
-    
-    
-            circle_marker_50bf37b615f8036ef491b573de706d96.bindTooltip(
+            circle_marker_e290218c0784380cf6354be86382ce78.bindTooltip(
                 `<div>
-                     CAMPO LIMPO | Total: 122.919.379 | Unidades: 22
+                     CAMPO LIMPO — Total: 122.919.379
                  </div>`,
                 {
   "sticky": true,
@@ -259,32 +199,15 @@
             );
         
     
-            var circle_marker_15188f32fb7960e79b9957c4e9b4eea6 = L.circleMarker(
+            var circle_marker_8d4bd41f8a9f49185fe3f9e443941f17 = L.circleMarker(
                 [-23.720364719421255, -46.70179456104367],
-                {"bubblingMouseEvents": true, "color": "#a70026ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a70026ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 32.99727444758882, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#a70026ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a70026ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 32.99727444758882, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_dd5bd74af819697f5fc356ee3375b75c = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_1ddfccef45631a99ee166bb718769bf9 = $(`<div id="html_1ddfccef45631a99ee166bb718769bf9" style="width: 100.0%; height: 100.0%;"><b>CAPELA DO SOCORRO</b><br>Total retirado: 161.274.492<br>Nº de unidades: 25</div>`)[0];
-                popup_dd5bd74af819697f5fc356ee3375b75c.setContent(html_1ddfccef45631a99ee166bb718769bf9);
-            
-        
-
-        circle_marker_15188f32fb7960e79b9957c4e9b4eea6.bindPopup(popup_dd5bd74af819697f5fc356ee3375b75c)
-        ;
-
-        
-    
-    
-            circle_marker_15188f32fb7960e79b9957c4e9b4eea6.bindTooltip(
+            circle_marker_8d4bd41f8a9f49185fe3f9e443941f17.bindTooltip(
                 `<div>
-                     CAPELA DO SOCORRO | Total: 161.274.492 | Unidades: 25
+                     CAPELA DO SOCORRO — Total: 161.274.492
                  </div>`,
                 {
   "sticky": true,
@@ -292,32 +215,15 @@
             );
         
     
-            var circle_marker_c1af02906d3ae1a365ddcca40be76d69 = L.circleMarker(
+            var circle_marker_bbd4cefd13f319e25be7194e70ba5ea5 = L.circleMarker(
                 [-23.51183182164657, -46.66643130337813],
-                {"bubblingMouseEvents": true, "color": "#fff3aeff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff3aeff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.137861651970711, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#fff3aeff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff3aeff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.137861651970711, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_4e5cf65c89867f0bf47bd8ef8287dbe5 = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_cbdcbdac51e2b5286b27f86fbe15d636 = $(`<div id="html_cbdcbdac51e2b5286b27f86fbe15d636" style="width: 100.0%; height: 100.0%;"><b>CASA VERDE/CACHOEIRINHA</b><br>Total retirado: 32.904.208<br>Nº de unidades: 8</div>`)[0];
-                popup_4e5cf65c89867f0bf47bd8ef8287dbe5.setContent(html_cbdcbdac51e2b5286b27f86fbe15d636);
-            
-        
-
-        circle_marker_c1af02906d3ae1a365ddcca40be76d69.bindPopup(popup_4e5cf65c89867f0bf47bd8ef8287dbe5)
-        ;
-
-        
-    
-    
-            circle_marker_c1af02906d3ae1a365ddcca40be76d69.bindTooltip(
+            circle_marker_bbd4cefd13f319e25be7194e70ba5ea5.bindTooltip(
                 `<div>
-                     CASA VERDE/CACHOEIRINHA | Total: 32.904.208 | Unidades: 8
+                     CASA VERDE/CACHOEIRINHA — Total: 32.904.208
                  </div>`,
                 {
   "sticky": true,
@@ -325,32 +231,15 @@
             );
         
     
-            var circle_marker_fa80d759e21de124cbfcb71af7932f8c = L.circleMarker(
+            var circle_marker_bc4f6f0bd600b6659c809b7d46d1f7bd = L.circleMarker(
                 [-23.667415349982917, -46.674452445703004],
-                {"bubblingMouseEvents": true, "color": "#fd8038ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd8038ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.127878716905307, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#fd8038ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd8038ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.127878716905307, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_b5153c4921f4c538dd311919c4e04124 = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_2c04069962021bc1ce13027da89a5b2b = $(`<div id="html_2c04069962021bc1ce13027da89a5b2b" style="width: 100.0%; height: 100.0%;"><b>CIDADE ADEMAR</b><br>Total retirado: 100.537.541<br>Nº de unidades: 20</div>`)[0];
-                popup_b5153c4921f4c538dd311919c4e04124.setContent(html_2c04069962021bc1ce13027da89a5b2b);
-            
-        
-
-        circle_marker_fa80d759e21de124cbfcb71af7932f8c.bindPopup(popup_b5153c4921f4c538dd311919c4e04124)
-        ;
-
-        
-    
-    
-            circle_marker_fa80d759e21de124cbfcb71af7932f8c.bindTooltip(
+            circle_marker_bc4f6f0bd600b6659c809b7d46d1f7bd.bindTooltip(
                 `<div>
-                     CIDADE ADEMAR | Total: 100.537.541 | Unidades: 20
+                     CIDADE ADEMAR — Total: 100.537.541
                  </div>`,
                 {
   "sticky": true,
@@ -358,32 +247,15 @@
             );
         
     
-            var circle_marker_041177bfb21116ce9874434dc452ba0f = L.circleMarker(
+            var circle_marker_c74e515138ca7385e39283115927ba63 = L.circleMarker(
                 [-23.583051720000892, -46.41631900152808],
-                {"bubblingMouseEvents": true, "color": "#feb24cff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb24cff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.42963114354496, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#feb24cff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb24cff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.42963114354496, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_4c4192255aef39689564882935fe3845 = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_2401e3d0c5887fd5012adbc7868ed934 = $(`<div id="html_2401e3d0c5887fd5012adbc7868ed934" style="width: 100.0%; height: 100.0%;"><b>CIDADE TIRADENTES</b><br>Total retirado: 77.778.267<br>Nº de unidades: 14</div>`)[0];
-                popup_4c4192255aef39689564882935fe3845.setContent(html_2401e3d0c5887fd5012adbc7868ed934);
-            
-        
-
-        circle_marker_041177bfb21116ce9874434dc452ba0f.bindPopup(popup_4c4192255aef39689564882935fe3845)
-        ;
-
-        
-    
-    
-            circle_marker_041177bfb21116ce9874434dc452ba0f.bindTooltip(
+            circle_marker_c74e515138ca7385e39283115927ba63.bindTooltip(
                 `<div>
-                     CIDADE TIRADENTES | Total: 77.778.267 | Unidades: 14
+                     CIDADE TIRADENTES — Total: 77.778.267
                  </div>`,
                 {
   "sticky": true,
@@ -391,32 +263,15 @@
             );
         
     
-            var circle_marker_f907800f6289653854b4bbc1aadd5b39 = L.circleMarker(
+            var circle_marker_3df55927bfb6dc6aae972d5565de49ba = L.circleMarker(
                 [-23.507546748924362, -46.47939628433965],
-                {"bubblingMouseEvents": true, "color": "#f53e25ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f53e25ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.573894022795855, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#f53e25ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f53e25ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.573894022795855, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_e3dd32a5bfa8cc66b30877bb2bc6638e = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_59811afdb5d299a8028e357867d20925 = $(`<div id="html_59811afdb5d299a8028e357867d20925" style="width: 100.0%; height: 100.0%;"><b>ERMELINO MATARAZZO</b><br>Total retirado: 121.744.560<br>Nº de unidades: 13</div>`)[0];
-                popup_e3dd32a5bfa8cc66b30877bb2bc6638e.setContent(html_59811afdb5d299a8028e357867d20925);
-            
-        
-
-        circle_marker_f907800f6289653854b4bbc1aadd5b39.bindPopup(popup_e3dd32a5bfa8cc66b30877bb2bc6638e)
-        ;
-
-        
-    
-    
-            circle_marker_f907800f6289653854b4bbc1aadd5b39.bindTooltip(
+            circle_marker_3df55927bfb6dc6aae972d5565de49ba.bindTooltip(
                 `<div>
-                     ERMELINO MATARAZZO | Total: 121.744.560 | Unidades: 13
+                     ERMELINO MATARAZZO — Total: 121.744.560
                  </div>`,
                 {
   "sticky": true,
@@ -424,32 +279,15 @@
             );
         
     
-            var circle_marker_be1c726b154bc7d83767fbd49c95508f = L.circleMarker(
+            var circle_marker_507b494f4f527d920b4dcfa01d031f01 = L.circleMarker(
                 [-23.47654108642168, -46.665147061049694],
-                {"bubblingMouseEvents": true, "color": "#ed2e21ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ed2e21ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.543809886019687, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#ed2e21ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ed2e21ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.543809886019687, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_f94d711f938daf3aafb21d52811cb130 = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_4ba6645433c63eca5698f20ff82b6df0 = $(`<div id="html_4ba6645433c63eca5698f20ff82b6df0" style="width: 100.0%; height: 100.0%;"><b>FREGUESIA DO Ó/BRASILANDIA</b><br>Total retirado: 127.713.490<br>Nº de unidades: 26</div>`)[0];
-                popup_f94d711f938daf3aafb21d52811cb130.setContent(html_4ba6645433c63eca5698f20ff82b6df0);
-            
-        
-
-        circle_marker_be1c726b154bc7d83767fbd49c95508f.bindPopup(popup_f94d711f938daf3aafb21d52811cb130)
-        ;
-
-        
-    
-    
-            circle_marker_be1c726b154bc7d83767fbd49c95508f.bindTooltip(
+            circle_marker_507b494f4f527d920b4dcfa01d031f01.bindTooltip(
                 `<div>
-                     FREGUESIA DO Ó/BRASILANDIA | Total: 127.713.490 | Unidades: 26
+                     FREGUESIA DO Ó/BRASILANDIA — Total: 127.713.490
                  </div>`,
                 {
   "sticky": true,
@@ -457,32 +295,15 @@
             );
         
     
-            var circle_marker_d2c515c40456c7cff80ffbc03a098c32 = L.circleMarker(
+            var circle_marker_6adc86f3119cccf8d94b446122f60a1c = L.circleMarker(
                 [-23.54332354103735, -46.41557085530023],
-                {"bubblingMouseEvents": true, "color": "#fea848ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fea848ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.20251073262106, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#fea848ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fea848ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.20251073262106, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_9f65c26b8f476a112ed1e4b0b533c6c4 = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_aac98fe1695b09a5c2065e629293d902 = $(`<div id="html_aac98fe1695b09a5c2065e629293d902" style="width: 100.0%; height: 100.0%;"><b>GUAIANASES</b><br>Total retirado: 82.534.622<br>Nº de unidades: 15</div>`)[0];
-                popup_9f65c26b8f476a112ed1e4b0b533c6c4.setContent(html_aac98fe1695b09a5c2065e629293d902);
-            
-        
-
-        circle_marker_d2c515c40456c7cff80ffbc03a098c32.bindPopup(popup_9f65c26b8f476a112ed1e4b0b533c6c4)
-        ;
-
-        
-    
-    
-            circle_marker_d2c515c40456c7cff80ffbc03a098c32.bindTooltip(
+            circle_marker_6adc86f3119cccf8d94b446122f60a1c.bindTooltip(
                 `<div>
-                     GUAIANASES | Total: 82.534.622 | Unidades: 15
+                     GUAIANASES — Total: 82.534.622
                  </div>`,
                 {
   "sticky": true,
@@ -490,32 +311,15 @@
             );
         
     
-            var circle_marker_ffb399a327f97c2f7d64684a0a1aac8a = L.circleMarker(
+            var circle_marker_d6b245f13678e541aff1873456b98b46 = L.circleMarker(
                 [-23.587309767601738, -46.60304795919856],
-                {"bubblingMouseEvents": true, "color": "#fe933eff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fe933eff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.993169632321433, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#fe933eff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fe933eff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.993169632321433, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_5012a6859b706de37a53e71aa9910269 = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_b8b41fdc16b8c31f93f8922884791e1b = $(`<div id="html_b8b41fdc16b8c31f93f8922884791e1b" style="width: 100.0%; height: 100.0%;"><b>IPIRANGA</b><br>Total retirado: 93.554.462<br>Nº de unidades: 10</div>`)[0];
-                popup_5012a6859b706de37a53e71aa9910269.setContent(html_b8b41fdc16b8c31f93f8922884791e1b);
-            
-        
-
-        circle_marker_ffb399a327f97c2f7d64684a0a1aac8a.bindPopup(popup_5012a6859b706de37a53e71aa9910269)
-        ;
-
-        
-    
-    
-            circle_marker_ffb399a327f97c2f7d64684a0a1aac8a.bindTooltip(
+            circle_marker_d6b245f13678e541aff1873456b98b46.bindTooltip(
                 `<div>
-                     IPIRANGA | Total: 93.554.462 | Unidades: 10
+                     IPIRANGA — Total: 93.554.462
                  </div>`,
                 {
   "sticky": true,
@@ -523,32 +327,15 @@
             );
         
     
-            var circle_marker_2d64df779792fa1050daab8e4e5e42a9 = L.circleMarker(
+            var circle_marker_cd56b4ef7c464178c80056f45a72b6b7 = L.circleMarker(
                 [-23.49331634883583, -46.41708274570736],
-                {"bubblingMouseEvents": true, "color": "#fd6a32ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd6a32ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.212029714553715, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#fd6a32ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd6a32ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.212029714553715, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_667c7d915b5467831afbb512de378584 = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_b9cf76ba6a491d4ab82af55b2330bdab = $(`<div id="html_b9cf76ba6a491d4ab82af55b2330bdab" style="width: 100.0%; height: 100.0%;"><b>ITAIM PAULISTA</b><br>Total retirado: 107.209.482<br>Nº de unidades: 18</div>`)[0];
-                popup_667c7d915b5467831afbb512de378584.setContent(html_b9cf76ba6a491d4ab82af55b2330bdab);
-            
-        
-
-        circle_marker_2d64df779792fa1050daab8e4e5e42a9.bindPopup(popup_667c7d915b5467831afbb512de378584)
-        ;
-
-        
-    
-    
-            circle_marker_2d64df779792fa1050daab8e4e5e42a9.bindTooltip(
+            circle_marker_cd56b4ef7c464178c80056f45a72b6b7.bindTooltip(
                 `<div>
-                     ITAIM PAULISTA | Total: 107.209.482 | Unidades: 18
+                     ITAIM PAULISTA — Total: 107.209.482
                  </div>`,
                 {
   "sticky": true,
@@ -556,32 +343,15 @@
             );
         
     
-            var circle_marker_49a0b09a51a869bd1b6d035d64ba80e7 = L.circleMarker(
+            var circle_marker_6f94cbb73f001493a20c5c9130662a7e = L.circleMarker(
                 [-23.5302126850067, -46.45865418064269],
-                {"bubblingMouseEvents": true, "color": "#f53e26ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f53e26ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.54778333456298, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#f53e26ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f53e26ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.54778333456298, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_330d59c8ba0279814a6a1155ada97211 = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_bbd6337eb8fa949caedc574636f5a6d7 = $(`<div id="html_bbd6337eb8fa949caedc574636f5a6d7" style="width: 100.0%; height: 100.0%;"><b>ITAQUERA</b><br>Total retirado: 121.583.873<br>Nº de unidades: 20</div>`)[0];
-                popup_330d59c8ba0279814a6a1155ada97211.setContent(html_bbd6337eb8fa949caedc574636f5a6d7);
-            
-        
-
-        circle_marker_49a0b09a51a869bd1b6d035d64ba80e7.bindPopup(popup_330d59c8ba0279814a6a1155ada97211)
-        ;
-
-        
-    
-    
-            circle_marker_49a0b09a51a869bd1b6d035d64ba80e7.bindTooltip(
+            circle_marker_6f94cbb73f001493a20c5c9130662a7e.bindTooltip(
                 `<div>
-                     ITAQUERA | Total: 121.583.873 | Unidades: 20
+                     ITAQUERA — Total: 121.583.873
                  </div>`,
                 {
   "sticky": true,
@@ -589,32 +359,15 @@
             );
         
     
-            var circle_marker_cc294fc126a95426b3c46d9d6f7d4dfa = L.circleMarker(
+            var circle_marker_defdaba5dea65e80162c0d463481cc8d = L.circleMarker(
                 [-23.64775521581886, -46.6399396634496],
-                {"bubblingMouseEvents": true, "color": "#9f0026ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9f0026ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 33.42074786450101, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#9f0026ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9f0026ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 33.42074786450101, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_61390de146ae732fe690c111c77b4fae = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_fbddb074c8391c45a53929c2b03e4d96 = $(`<div id="html_fbddb074c8391c45a53929c2b03e4d96" style="width: 100.0%; height: 100.0%;"><b>JABAQUARA</b><br>Total retirado: 163.880.577<br>Nº de unidades: 20</div>`)[0];
-                popup_61390de146ae732fe690c111c77b4fae.setContent(html_fbddb074c8391c45a53929c2b03e4d96);
-            
-        
-
-        circle_marker_cc294fc126a95426b3c46d9d6f7d4dfa.bindPopup(popup_61390de146ae732fe690c111c77b4fae)
-        ;
-
-        
-    
-    
-            circle_marker_cc294fc126a95426b3c46d9d6f7d4dfa.bindTooltip(
+            circle_marker_defdaba5dea65e80162c0d463481cc8d.bindTooltip(
                 `<div>
-                     JABAQUARA | Total: 163.880.577 | Unidades: 20
+                     JABAQUARA — Total: 163.880.577
                  </div>`,
                 {
   "sticky": true,
@@ -622,32 +375,15 @@
             );
         
     
-            var circle_marker_1b2b49734caa72bbb4e6565ce62830a6 = L.circleMarker(
+            var circle_marker_1dcb62b95535e0c36b05410eff347516 = L.circleMarker(
                 [-23.468032720724985, -46.58223723036629],
-                {"bubblingMouseEvents": true, "color": "#fd863aff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd863aff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.87209774095058, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#fd863aff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd863aff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.87209774095058, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_b13b65e6d27e7db928582d82743804da = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_f4991eee8bb73af8651cf8b65cf568ca = $(`<div id="html_f4991eee8bb73af8651cf8b65cf568ca" style="width: 100.0%; height: 100.0%;"><b>JACANA/TREMEMBE</b><br>Total retirado: 98.963.447<br>Nº de unidades: 14</div>`)[0];
-                popup_b13b65e6d27e7db928582d82743804da.setContent(html_f4991eee8bb73af8651cf8b65cf568ca);
-            
-        
-
-        circle_marker_1b2b49734caa72bbb4e6565ce62830a6.bindPopup(popup_b13b65e6d27e7db928582d82743804da)
-        ;
-
-        
-    
-    
-            circle_marker_1b2b49734caa72bbb4e6565ce62830a6.bindTooltip(
+            circle_marker_1dcb62b95535e0c36b05410eff347516.bindTooltip(
                 `<div>
-                     JACANA/TREMEMBE | Total: 98.963.447 | Unidades: 14
+                     JACANA/TREMEMBE — Total: 98.963.447
                  </div>`,
                 {
   "sticky": true,
@@ -655,32 +391,15 @@
             );
         
     
-            var circle_marker_e44c6b50af3db0ac0adaaf6cce26b07d = L.circleMarker(
+            var circle_marker_203d6f761da889977b40a8efd4d3c141 = L.circleMarker(
                 [-23.522097228178144, -46.69539851502312],
-                {"bubblingMouseEvents": true, "color": "#ffeea1ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeea1ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.040569146088409, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#ffeea1ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeea1ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.040569146088409, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_ff96f08154f25bd8b7fca3c2b181ba94 = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_dec72bf3b1de84b9c806155beb2fc9b8 = $(`<div id="html_dec72bf3b1de84b9c806155beb2fc9b8" style="width: 100.0%; height: 100.0%;"><b>LAPA</b><br>Total retirado: 38.459.533<br>Nº de unidades: 8</div>`)[0];
-                popup_ff96f08154f25bd8b7fca3c2b181ba94.setContent(html_dec72bf3b1de84b9c806155beb2fc9b8);
-            
-        
-
-        circle_marker_e44c6b50af3db0ac0adaaf6cce26b07d.bindPopup(popup_ff96f08154f25bd8b7fca3c2b181ba94)
-        ;
-
-        
-    
-    
-            circle_marker_e44c6b50af3db0ac0adaaf6cce26b07d.bindTooltip(
+            circle_marker_203d6f761da889977b40a8efd4d3c141.bindTooltip(
                 `<div>
-                     LAPA | Total: 38.459.533 | Unidades: 8
+                     LAPA — Total: 38.459.533
                  </div>`,
                 {
   "sticky": true,
@@ -688,32 +407,15 @@
             );
         
     
-            var circle_marker_179d81124cdea4a23000f9001f659e8c = L.circleMarker(
+            var circle_marker_83e79b4c4b8a01ceb9cb6307c97249b2 = L.circleMarker(
                 [-23.66734998206765, -46.728466489880475],
-                {"bubblingMouseEvents": true, "color": "#d10d20ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d10d20ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.234366594485273, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#d10d20ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d10d20ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.234366594485273, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_270acc9259ed04fe01cd2698217cb8ec = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_f2eedd85eb00cf16405c38db74d9ffb8 = $(`<div id="html_f2eedd85eb00cf16405c38db74d9ffb8" style="width: 100.0%; height: 100.0%;"><b>M'BOI MIRIM</b><br>Total retirado: 144.271.364<br>Nº de unidades: 26</div>`)[0];
-                popup_270acc9259ed04fe01cd2698217cb8ec.setContent(html_f2eedd85eb00cf16405c38db74d9ffb8);
-            
-        
-
-        circle_marker_179d81124cdea4a23000f9001f659e8c.bindPopup(popup_270acc9259ed04fe01cd2698217cb8ec)
-        ;
-
-        
-    
-    
-            circle_marker_179d81124cdea4a23000f9001f659e8c.bindTooltip(
+            circle_marker_83e79b4c4b8a01ceb9cb6307c97249b2.bindTooltip(
                 `<div>
-                     M'BOI MIRIM | Total: 144.271.364 | Unidades: 26
+                     M'BOI MIRIM — Total: 144.271.364
                  </div>`,
                 {
   "sticky": true,
@@ -721,32 +423,15 @@
             );
         
     
-            var circle_marker_41eaa6981573ec1dea53a03e6891ad1b = L.circleMarker(
+            var circle_marker_abde752b30271f07c0b93f1412621a35 = L.circleMarker(
                 [-23.551001980939386, -46.59838612056709],
-                {"bubblingMouseEvents": true, "color": "#ffffccff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffccff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.0, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#ffffccff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffccff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.0, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_ea17a247551960b9630b66e139ec4913 = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_52e970a2b3414ced48bfb4a7918d8d2b = $(`<div id="html_52e970a2b3414ced48bfb4a7918d8d2b" style="width: 100.0%; height: 100.0%;"><b>MOOCA</b><br>Total retirado: 19.747.658<br>Nº de unidades: 3</div>`)[0];
-                popup_ea17a247551960b9630b66e139ec4913.setContent(html_52e970a2b3414ced48bfb4a7918d8d2b);
-            
-        
-
-        circle_marker_41eaa6981573ec1dea53a03e6891ad1b.bindPopup(popup_ea17a247551960b9630b66e139ec4913)
-        ;
-
-        
-    
-    
-            circle_marker_41eaa6981573ec1dea53a03e6891ad1b.bindTooltip(
+            circle_marker_abde752b30271f07c0b93f1412621a35.bindTooltip(
                 `<div>
-                     MOOCA | Total: 19.747.658 | Unidades: 3
+                     MOOCA — Total: 19.747.658
                  </div>`,
                 {
   "sticky": true,
@@ -754,32 +439,15 @@
             );
         
     
-            var circle_marker_245555af3017f2a59b0dc7cb371bbf02 = L.circleMarker(
+            var circle_marker_b5fdf75f3307256c4da09c0374e53e64 = L.circleMarker(
                 [-23.81526645666646, -46.735606009797074],
-                {"bubblingMouseEvents": true, "color": "#ffda77ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffda77ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.165744416278873, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#ffda77ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffda77ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.165744416278873, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_e1208378671aba528ce06986d2d42cce = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_9c1191207e859618543785955fd9df1a = $(`<div id="html_9c1191207e859618543785955fd9df1a" style="width: 100.0%; height: 100.0%;"><b>PARELHEIROS</b><br>Total retirado: 57.692.080<br>Nº de unidades: 12</div>`)[0];
-                popup_e1208378671aba528ce06986d2d42cce.setContent(html_9c1191207e859618543785955fd9df1a);
-            
-        
-
-        circle_marker_245555af3017f2a59b0dc7cb371bbf02.bindPopup(popup_e1208378671aba528ce06986d2d42cce)
-        ;
-
-        
-    
-    
-            circle_marker_245555af3017f2a59b0dc7cb371bbf02.bindTooltip(
+            circle_marker_b5fdf75f3307256c4da09c0374e53e64.bindTooltip(
                 `<div>
-                     PARELHEIROS | Total: 57.692.080 | Unidades: 12
+                     PARELHEIROS — Total: 57.692.080
                  </div>`,
                 {
   "sticky": true,
@@ -787,32 +455,15 @@
             );
         
     
-            var circle_marker_361fbc88dcf1d2658c1d61def6a1f14d = L.circleMarker(
+            var circle_marker_22d33dcf1432e07dda245c1d96b67d6e = L.circleMarker(
                 [-23.518511626890536, -46.52101281687136],
-                {"bubblingMouseEvents": true, "color": "#feaa48ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feaa48ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.03756671674323, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#feaa48ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feaa48ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.03756671674323, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_0bb90e0b2a9349e8fbe805a531d45c04 = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_ed7213ce7eb788880937538ec78f785d = $(`<div id="html_ed7213ce7eb788880937538ec78f785d" style="width: 100.0%; height: 100.0%;"><b>PENHA</b><br>Total retirado: 81.519.545<br>Nº de unidades: 13</div>`)[0];
-                popup_0bb90e0b2a9349e8fbe805a531d45c04.setContent(html_ed7213ce7eb788880937538ec78f785d);
-            
-        
-
-        circle_marker_361fbc88dcf1d2658c1d61def6a1f14d.bindPopup(popup_0bb90e0b2a9349e8fbe805a531d45c04)
-        ;
-
-        
-    
-    
-            circle_marker_361fbc88dcf1d2658c1d61def6a1f14d.bindTooltip(
+            circle_marker_22d33dcf1432e07dda245c1d96b67d6e.bindTooltip(
                 `<div>
-                     PENHA | Total: 81.519.545 | Unidades: 13
+                     PENHA — Total: 81.519.545
                  </div>`,
                 {
   "sticky": true,
@@ -820,32 +471,15 @@
             );
         
     
-            var circle_marker_9f51cb4b4bb820a9ae53c3c518656bea = L.circleMarker(
+            var circle_marker_699fd56db4e7c5349b736cf3fbab4b14 = L.circleMarker(
                 [-23.407068285415424, -46.75309421687395],
-                {"bubblingMouseEvents": true, "color": "#feb14bff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb14bff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.471864820618514, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#feb14bff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb14bff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.471864820618514, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_111e507b60ccaef9e62889a8976eaec4 = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_17b5feea831611ac1c40c37b5f323b3b = $(`<div id="html_17b5feea831611ac1c40c37b5f323b3b" style="width: 100.0%; height: 100.0%;"><b>PERUS/ANHANGUERA</b><br>Total retirado: 78.038.176<br>Nº de unidades: 14</div>`)[0];
-                popup_111e507b60ccaef9e62889a8976eaec4.setContent(html_17b5feea831611ac1c40c37b5f323b3b);
-            
-        
-
-        circle_marker_9f51cb4b4bb820a9ae53c3c518656bea.bindPopup(popup_111e507b60ccaef9e62889a8976eaec4)
-        ;
-
-        
-    
-    
-            circle_marker_9f51cb4b4bb820a9ae53c3c518656bea.bindTooltip(
+            circle_marker_699fd56db4e7c5349b736cf3fbab4b14.bindTooltip(
                 `<div>
-                     PERUS/ANHANGUERA | Total: 78.038.176 | Unidades: 14
+                     PERUS/ANHANGUERA — Total: 78.038.176
                  </div>`,
                 {
   "sticky": true,
@@ -853,32 +487,15 @@
             );
         
     
-            var circle_marker_11146b1d8ba3aa56cc0170b15b1698c1 = L.circleMarker(
+            var circle_marker_a0a9c389222a2e944fd00f5abf78c4f5 = L.circleMarker(
                 [-23.56312289083323, -46.70320171317356],
-                {"bubblingMouseEvents": true, "color": "#fff2acff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff2acff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.260719372916839, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#fff2acff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff2acff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.260719372916839, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_3d84133d9326f3bb1a95e9eef39323fb = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_9f8c49d09a2e705adfb6a7fb05eaeb50 = $(`<div id="html_9f8c49d09a2e705adfb6a7fb05eaeb50" style="width: 100.0%; height: 100.0%;"><b>PINHEIROS</b><br>Total retirado: 33.660.283<br>Nº de unidades: 6</div>`)[0];
-                popup_3d84133d9326f3bb1a95e9eef39323fb.setContent(html_9f8c49d09a2e705adfb6a7fb05eaeb50);
-            
-        
-
-        circle_marker_11146b1d8ba3aa56cc0170b15b1698c1.bindPopup(popup_3d84133d9326f3bb1a95e9eef39323fb)
-        ;
-
-        
-    
-    
-            circle_marker_11146b1d8ba3aa56cc0170b15b1698c1.bindTooltip(
+            circle_marker_a0a9c389222a2e944fd00f5abf78c4f5.bindTooltip(
                 `<div>
-                     PINHEIROS | Total: 33.660.283 | Unidades: 6
+                     PINHEIROS — Total: 33.660.283
                  </div>`,
                 {
   "sticky": true,
@@ -886,32 +503,15 @@
             );
         
     
-            var circle_marker_5a1ef2e873d5d0d225c83599aba17468 = L.circleMarker(
+            var circle_marker_1301783a86d0a71a51c1b9cd86ced530 = L.circleMarker(
                 [-23.48849965931681, -46.72733521687191],
-                {"bubblingMouseEvents": true, "color": "#fd7635ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd7635ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.65844305297359, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#fd7635ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd7635ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.65844305297359, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_900fcda964b79d3b0afadeb233dc2ffb = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_bee9aa78389b2ab0ed3f89935a5478a1 = $(`<div id="html_bee9aa78389b2ab0ed3f89935a5478a1" style="width: 100.0%; height: 100.0%;"><b>PIRITUBA/JAGUARÁ</b><br>Total retirado: 103.802.671<br>Nº de unidades: 22</div>`)[0];
-                popup_900fcda964b79d3b0afadeb233dc2ffb.setContent(html_bee9aa78389b2ab0ed3f89935a5478a1);
-            
-        
-
-        circle_marker_5a1ef2e873d5d0d225c83599aba17468.bindPopup(popup_900fcda964b79d3b0afadeb233dc2ffb)
-        ;
-
-        
-    
-    
-            circle_marker_5a1ef2e873d5d0d225c83599aba17468.bindTooltip(
+            circle_marker_1301783a86d0a71a51c1b9cd86ced530.bindTooltip(
                 `<div>
-                     PIRITUBA/JAGUARÁ | Total: 103.802.671 | Unidades: 22
+                     PIRITUBA/JAGUARÁ — Total: 103.802.671
                  </div>`,
                 {
   "sticky": true,
@@ -919,32 +519,15 @@
             );
         
     
-            var circle_marker_22ef8fea9c69e7e48060231ce462ec94 = L.circleMarker(
+            var circle_marker_9450e893cb7f870cbc682edf0ecdc913 = L.circleMarker(
                 [-23.481274592421936, -46.60366369228914],
-                {"bubblingMouseEvents": true, "color": "#fed773ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fed773ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.470467475419696, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#fed773ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fed773ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.470467475419696, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_789336083309be45297a4ee5a92f2bd5 = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_8cfa048aea11bbcbd1e360d7f4233d82 = $(`<div id="html_8cfa048aea11bbcbd1e360d7f4233d82" style="width: 100.0%; height: 100.0%;"><b>SANTANA/TUCURUVI</b><br>Total retirado: 59.567.367<br>Nº de unidades: 10</div>`)[0];
-                popup_789336083309be45297a4ee5a92f2bd5.setContent(html_8cfa048aea11bbcbd1e360d7f4233d82);
-            
-        
-
-        circle_marker_22ef8fea9c69e7e48060231ce462ec94.bindPopup(popup_789336083309be45297a4ee5a92f2bd5)
-        ;
-
-        
-    
-    
-            circle_marker_22ef8fea9c69e7e48060231ce462ec94.bindTooltip(
+            circle_marker_9450e893cb7f870cbc682edf0ecdc913.bindTooltip(
                 `<div>
-                     SANTANA/TUCURUVI | Total: 59.567.367 | Unidades: 10
+                     SANTANA/TUCURUVI — Total: 59.567.367
                  </div>`,
                 {
   "sticky": true,
@@ -952,32 +535,15 @@
             );
         
     
-            var circle_marker_16ef75b7bc0a2718002c005433538208 = L.circleMarker(
+            var circle_marker_ad3209ae8a0ed1e2c72346ac2980864b = L.circleMarker(
                 [-23.651223287435396, -46.707038761045496],
-                {"bubblingMouseEvents": true, "color": "#fffec8ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffec8ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.293409082966084, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#fffec8ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffec8ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.293409082966084, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_e0cac61b879334f28fa8ce3c7ab01e3f = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_f8895b8454cca9489faff90d4c98c7c7 = $(`<div id="html_f8895b8454cca9489faff90d4c98c7c7" style="width: 100.0%; height: 100.0%;"><b>SANTO AMARO</b><br>Total retirado: 21.553.318<br>Nº de unidades: 5</div>`)[0];
-                popup_e0cac61b879334f28fa8ce3c7ab01e3f.setContent(html_f8895b8454cca9489faff90d4c98c7c7);
-            
-        
-
-        circle_marker_16ef75b7bc0a2718002c005433538208.bindPopup(popup_e0cac61b879334f28fa8ce3c7ab01e3f)
-        ;
-
-        
-    
-    
-            circle_marker_16ef75b7bc0a2718002c005433538208.bindTooltip(
+            circle_marker_ad3209ae8a0ed1e2c72346ac2980864b.bindTooltip(
                 `<div>
-                     SANTO AMARO | Total: 21.553.318 | Unidades: 5
+                     SANTO AMARO — Total: 21.553.318
                  </div>`,
                 {
   "sticky": true,
@@ -985,32 +551,15 @@
             );
         
     
-            var circle_marker_28ae3a4ef7b15b32199ae6c014129bb9 = L.circleMarker(
+            var circle_marker_f8f6452f7319efe9cf5a38b29b7520b9 = L.circleMarker(
                 [-23.600357569614758, -46.512645359198444],
-                {"bubblingMouseEvents": true, "color": "#800026ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800026ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 35.0, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#800026ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800026ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 35.0, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_cc87166b38d909a75872245b82b90b2c = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_1fa811a3380f8f11a7635bbe057a45fb = $(`<div id="html_1fa811a3380f8f11a7635bbe057a45fb" style="width: 100.0%; height: 100.0%;"><b>SAPOPEMBA</b><br>Total retirado: 173.599.405<br>Nº de unidades: 25</div>`)[0];
-                popup_cc87166b38d909a75872245b82b90b2c.setContent(html_1fa811a3380f8f11a7635bbe057a45fb);
-            
-        
-
-        circle_marker_28ae3a4ef7b15b32199ae6c014129bb9.bindPopup(popup_cc87166b38d909a75872245b82b90b2c)
-        ;
-
-        
-    
-    
-            circle_marker_28ae3a4ef7b15b32199ae6c014129bb9.bindTooltip(
+            circle_marker_f8f6452f7319efe9cf5a38b29b7520b9.bindTooltip(
                 `<div>
-                     SAPOPEMBA | Total: 173.599.405 | Unidades: 25
+                     SAPOPEMBA — Total: 173.599.405
                  </div>`,
                 {
   "sticky": true,
@@ -1018,32 +567,15 @@
             );
         
     
-            var circle_marker_94a32372aa04ffb7489f2657e8b2181b = L.circleMarker(
+            var circle_marker_657452906b7aa6ec099bf62960736cbb = L.circleMarker(
                 [-23.59953750034677, -46.46874487269204],
-                {"bubblingMouseEvents": true, "color": "#fe933eff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fe933eff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.035008936232618, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#fe933eff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fe933eff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.035008936232618, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_a6db3a431096dfa1c6f53978ffb90e72 = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_e053297616c6b86b392252784547dda6 = $(`<div id="html_e053297616c6b86b392252784547dda6" style="width: 100.0%; height: 100.0%;"><b>SÃO MATEUS</b><br>Total retirado: 93.811.944<br>Nº de unidades: 16</div>`)[0];
-                popup_a6db3a431096dfa1c6f53978ffb90e72.setContent(html_e053297616c6b86b392252784547dda6);
-            
-        
-
-        circle_marker_94a32372aa04ffb7489f2657e8b2181b.bindPopup(popup_a6db3a431096dfa1c6f53978ffb90e72)
-        ;
-
-        
-    
-    
-            circle_marker_94a32372aa04ffb7489f2657e8b2181b.bindTooltip(
+            circle_marker_657452906b7aa6ec099bf62960736cbb.bindTooltip(
                 `<div>
-                     SÃO MATEUS | Total: 93.811.944 | Unidades: 16
+                     SÃO MATEUS — Total: 93.811.944
                  </div>`,
                 {
   "sticky": true,
@@ -1051,32 +583,15 @@
             );
         
     
-            var circle_marker_6876cf699bcd189622cdca2b117be329 = L.circleMarker(
+            var circle_marker_3f18260ac6c42ffd4d72eaba221562cc = L.circleMarker(
                 [-23.500360216626017, -46.45127800337821],
-                {"bubblingMouseEvents": true, "color": "#ffeb9aff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeb9aff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.567678532763102, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#ffeb9aff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeb9aff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.567678532763102, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_aef987b5e633d03b02d68d6637cc9763 = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_9f5fbf3bf1ad0ba4ca3aae9ce9f09061 = $(`<div id="html_9f5fbf3bf1ad0ba4ca3aae9ce9f09061" style="width: 100.0%; height: 100.0%;"><b>SÃO MIGUEL PAULISTA</b><br>Total retirado: 41.703.401<br>Nº de unidades: 7</div>`)[0];
-                popup_aef987b5e633d03b02d68d6637cc9763.setContent(html_9f5fbf3bf1ad0ba4ca3aae9ce9f09061);
-            
-        
-
-        circle_marker_6876cf699bcd189622cdca2b117be329.bindPopup(popup_aef987b5e633d03b02d68d6637cc9763)
-        ;
-
-        
-    
-    
-            circle_marker_6876cf699bcd189622cdca2b117be329.bindTooltip(
+            circle_marker_3f18260ac6c42ffd4d72eaba221562cc.bindTooltip(
                 `<div>
-                     SÃO MIGUEL PAULISTA | Total: 41.703.401 | Unidades: 7
+                     SÃO MIGUEL PAULISTA — Total: 41.703.401
                  </div>`,
                 {
   "sticky": true,
@@ -1084,32 +599,15 @@
             );
         
     
-            var circle_marker_9c00ef3174b6da6b4803c9a416a39575 = L.circleMarker(
+            var circle_marker_3df160b3bd9ed9283e65b4d1f169136a = L.circleMarker(
                 [-23.5479893124978, -46.634684288035125],
-                {"bubblingMouseEvents": true, "color": "#fea446ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fea446ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.567861475112142, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#fea446ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fea446ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.567861475112142, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_8e94698ce8eba2fc844d4bd6ae009c03 = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_a8cb44baa947dbb970063807114bddcf = $(`<div id="html_a8cb44baa947dbb970063807114bddcf" style="width: 100.0%; height: 100.0%;"><b>SÉ</b><br>Total retirado: 84.783.016<br>Nº de unidades: 7</div>`)[0];
-                popup_8e94698ce8eba2fc844d4bd6ae009c03.setContent(html_a8cb44baa947dbb970063807114bddcf);
-            
-        
-
-        circle_marker_9c00ef3174b6da6b4803c9a416a39575.bindPopup(popup_8e94698ce8eba2fc844d4bd6ae009c03)
-        ;
-
-        
-    
-    
-            circle_marker_9c00ef3174b6da6b4803c9a416a39575.bindTooltip(
+            circle_marker_3df160b3bd9ed9283e65b4d1f169136a.bindTooltip(
                 `<div>
-                     SÉ | Total: 84.783.016 | Unidades: 7
+                     SÉ — Total: 84.783.016
                  </div>`,
                 {
   "sticky": true,
@@ -1117,32 +615,15 @@
             );
         
     
-            var circle_marker_e7f5cfa008711003015217541fcd34bc = L.circleMarker(
+            var circle_marker_e99ced68775963d340e1bd42eb1ff2f1 = L.circleMarker(
                 [-23.52155166879476, -46.60413813221306],
-                {"bubblingMouseEvents": true, "color": "#fed773ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fed773ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.43623143258815, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#fed773ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fed773ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.43623143258815, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_e7cdfe855bc7d7c29c0fb221c809b1ec = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_2ba28d7949d2b603ef1c6dee4a8d6f7f = $(`<div id="html_2ba28d7949d2b603ef1c6dee4a8d6f7f" style="width: 100.0%; height: 100.0%;"><b>VILA GUILHERME/VILA MARIA</b><br>Total retirado: 59.356.676<br>Nº de unidades: 8</div>`)[0];
-                popup_e7cdfe855bc7d7c29c0fb221c809b1ec.setContent(html_2ba28d7949d2b603ef1c6dee4a8d6f7f);
-            
-        
-
-        circle_marker_e7f5cfa008711003015217541fcd34bc.bindPopup(popup_e7cdfe855bc7d7c29c0fb221c809b1ec)
-        ;
-
-        
-    
-    
-            circle_marker_e7f5cfa008711003015217541fcd34bc.bindTooltip(
+            circle_marker_e99ced68775963d340e1bd42eb1ff2f1.bindTooltip(
                 `<div>
-                     VILA GUILHERME/VILA MARIA | Total: 59.356.676 | Unidades: 8
+                     VILA GUILHERME/VILA MARIA — Total: 59.356.676
                  </div>`,
                 {
   "sticky": true,
@@ -1150,32 +631,15 @@
             );
         
     
-            var circle_marker_cc9aa2c9225600b41619dcbadc6e7491 = L.circleMarker(
+            var circle_marker_9a16b9766763525750c0bdbd0eb8e51e = L.circleMarker(
                 [-23.598291372734437, -46.64944998618565],
-                {"bubblingMouseEvents": true, "color": "#fff8b9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff8b9ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.367369751089015, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#fff8b9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff8b9ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.367369751089015, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_d1b3ae3438f86c1b7f5972435e906069 = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_5907777e95bd2fd596ca805bd4ba4ee7 = $(`<div id="html_5907777e95bd2fd596ca805bd4ba4ee7" style="width: 100.0%; height: 100.0%;"><b>VILA MARIANA</b><br>Total retirado: 28.162.547<br>Nº de unidades: 5</div>`)[0];
-                popup_d1b3ae3438f86c1b7f5972435e906069.setContent(html_5907777e95bd2fd596ca805bd4ba4ee7);
-            
-        
-
-        circle_marker_cc9aa2c9225600b41619dcbadc6e7491.bindPopup(popup_d1b3ae3438f86c1b7f5972435e906069)
-        ;
-
-        
-    
-    
-            circle_marker_cc9aa2c9225600b41619dcbadc6e7491.bindTooltip(
+            circle_marker_9a16b9766763525750c0bdbd0eb8e51e.bindTooltip(
                 `<div>
-                     VILA MARIANA | Total: 28.162.547 | Unidades: 5
+                     VILA MARIANA — Total: 28.162.547
                  </div>`,
                 {
   "sticky": true,
@@ -1183,32 +647,15 @@
             );
         
     
-            var circle_marker_bb5a95ba19ffc3d56e0894265379af3c = L.circleMarker(
+            var circle_marker_349853f1ad124747c8596438819943c7 = L.circleMarker(
                 [-23.58259946041313, -46.56132291871817],
-                {"bubblingMouseEvents": true, "color": "#ffdd7fff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffdd7fff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.608277233277047, "stroke": true, "weight": 1}
-            ).addTo(map_defd71b0800938b09f19136f3b58a4d1);
+                {"bubblingMouseEvents": true, "color": "#ffdd7fff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffdd7fff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.608277233277047, "stroke": true, "weight": 3}
+            ).addTo(map_26bd7d3aada9f9d5940b7dbd00ca59f0);
         
     
-        var popup_4cec9c97f0ffe5d28e4e49d0bddb0fc3 = L.popup({
-  "maxWidth": 320,
-});
-
-        
-            
-                var html_d3bee230bde0fee7733724c244fe7177 = $(`<div id="html_d3bee230bde0fee7733724c244fe7177" style="width: 100.0%; height: 100.0%;"><b>VILA PRUDENTE</b><br>Total retirado: 54.261.388<br>Nº de unidades: 6</div>`)[0];
-                popup_4cec9c97f0ffe5d28e4e49d0bddb0fc3.setContent(html_d3bee230bde0fee7733724c244fe7177);
-            
-        
-
-        circle_marker_bb5a95ba19ffc3d56e0894265379af3c.bindPopup(popup_4cec9c97f0ffe5d28e4e49d0bddb0fc3)
-        ;
-
-        
-    
-    
-            circle_marker_bb5a95ba19ffc3d56e0894265379af3c.bindTooltip(
+            circle_marker_349853f1ad124747c8596438819943c7.bindTooltip(
                 `<div>
-                     VILA PRUDENTE | Total: 54.261.388 | Unidades: 6
+                     VILA PRUDENTE — Total: 54.261.388
                  </div>`,
                 {
   "sticky": true,
